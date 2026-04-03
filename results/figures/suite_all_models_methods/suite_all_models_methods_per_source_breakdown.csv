@@ -1,0 +1,29 @@
+method,paper_label,source_group,source_label,source_compact_label,slice_core,row_count
+stone_runtime,STONE,public_humaneval_plus,HumanEval+,HE+,0.5064,4592
+stone_runtime,STONE,public_mbpp_plus,MBPP+,MBPP+,0.5343,6720
+stone_runtime,STONE,public_humaneval_x,HumanEval-X (py/cpp/java slice),HEX,0.4857,3360
+stone_runtime,STONE,public_mbxp_5lang,MBXP-5lang (py/cpp/java slice),MBXP,0.6026,3360
+stone_runtime,STONE,crafted_original,Crafted Original,Orig.,0.4376,3360
+stone_runtime,STONE,crafted_translation,Crafted Translation,Trans.,0.4573,3360
+stone_runtime,STONE,crafted_stress,Crafted Stress,Stress,0.4394,3360
+ewd_runtime,EWD,public_humaneval_plus,HumanEval+,HE+,0.4503,4592
+ewd_runtime,EWD,public_mbpp_plus,MBPP+,MBPP+,0.4876,6720
+ewd_runtime,EWD,public_humaneval_x,HumanEval-X (py/cpp/java slice),HEX,0.4694,3360
+ewd_runtime,EWD,public_mbxp_5lang,MBXP-5lang (py/cpp/java slice),MBXP,0.5096,3360
+ewd_runtime,EWD,crafted_original,Crafted Original,Orig.,0.3983,3360
+ewd_runtime,EWD,crafted_translation,Crafted Translation,Trans.,0.4005,3360
+ewd_runtime,EWD,crafted_stress,Crafted Stress,Stress,0.3207,3360
+kgw_runtime,KGW-RT,public_humaneval_plus,HumanEval+,HE+,0.4477,4592
+kgw_runtime,KGW-RT,public_mbpp_plus,MBPP+,MBPP+,0.4573,6720
+kgw_runtime,KGW-RT,public_humaneval_x,HumanEval-X (py/cpp/java slice),HEX,0.4305,3360
+kgw_runtime,KGW-RT,public_mbxp_5lang,MBXP-5lang (py/cpp/java slice),MBXP,0.5512,3360
+kgw_runtime,KGW-RT,crafted_original,Crafted Original,Orig.,0.355,3360
+kgw_runtime,KGW-RT,crafted_translation,Crafted Translation,Trans.,0.3316,3360
+kgw_runtime,KGW-RT,crafted_stress,Crafted Stress,Stress,0.3283,3360
+sweet_runtime,SWEET,public_humaneval_plus,HumanEval+,HE+,0.4605,4592
+sweet_runtime,SWEET,public_mbpp_plus,MBPP+,MBPP+,0.4686,6720
+sweet_runtime,SWEET,public_humaneval_x,HumanEval-X (py/cpp/java slice),HEX,0.4683,3360
+sweet_runtime,SWEET,public_mbxp_5lang,MBXP-5lang (py/cpp/java slice),MBXP,0.4629,3360
+sweet_runtime,SWEET,crafted_original,Crafted Original,Orig.,0.3902,3360
+sweet_runtime,SWEET,crafted_translation,Crafted Translation,Trans.,0.3952,3360
+sweet_runtime,SWEET,crafted_stress,Crafted Stress,Stress,0.3849,3360

@@ -8,5 +8,5 @@
   "source_relative": ".",
   "public_external_root": "external_checkout/lm-watermarking",
   "method_symbol": "KGW",
-  "notes": "Pinned official KGW source from jwkirchenbauer/lm-watermarking. The benchmark adapter imports upstream processors without modifying algorithm internals."
+  "notes": "Pinned KGW upstream implementation from jwkirchenbauer/lm-watermarking. CodeWMBench keeps the watermark algorithm logic intact while routing orchestration, local model loading, and decoding policy through the shared benchmark runner."
 }

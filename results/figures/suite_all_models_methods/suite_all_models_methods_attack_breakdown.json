@@ -1,0 +1,226 @@
+[
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "attack": "block_shuffle",
+    "attack_label": "Shuffle",
+    "attacked_detect_rate": 0.303,
+    "row_count": 4016
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "attack": "budgeted_adaptive",
+    "attack_label": "Budget",
+    "attacked_detect_rate": 0.3035,
+    "row_count": 4016
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "attack": "comment_strip",
+    "attack_label": "Comm",
+    "attacked_detect_rate": 0.2249,
+    "row_count": 4016
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "attack": "control_flow_flatten",
+    "attack_label": "C-Flow",
+    "attacked_detect_rate": 0.2896,
+    "row_count": 4016
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "attack": "identifier_rename",
+    "attack_label": "Rename",
+    "attacked_detect_rate": 0.9569,
+    "row_count": 4016
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "attack": "noise_insert",
+    "attack_label": "Noise",
+    "attacked_detect_rate": 0.3556,
+    "row_count": 4016
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "attack": "whitespace_normalize",
+    "attack_label": "WS",
+    "attacked_detect_rate": 0.308,
+    "row_count": 4016
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "attack": "block_shuffle",
+    "attack_label": "Shuffle",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "attack": "budgeted_adaptive",
+    "attack_label": "Budget",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "attack": "comment_strip",
+    "attack_label": "Comm",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "attack": "control_flow_flatten",
+    "attack_label": "C-Flow",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "attack": "identifier_rename",
+    "attack_label": "Rename",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "attack": "noise_insert",
+    "attack_label": "Noise",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "attack": "whitespace_normalize",
+    "attack_label": "WS",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "attack": "block_shuffle",
+    "attack_label": "Shuffle",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "attack": "budgeted_adaptive",
+    "attack_label": "Budget",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "attack": "comment_strip",
+    "attack_label": "Comm",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "attack": "control_flow_flatten",
+    "attack_label": "C-Flow",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "attack": "identifier_rename",
+    "attack_label": "Rename",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "attack": "noise_insert",
+    "attack_label": "Noise",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "attack": "whitespace_normalize",
+    "attack_label": "WS",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "attack": "block_shuffle",
+    "attack_label": "Shuffle",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "attack": "budgeted_adaptive",
+    "attack_label": "Budget",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "attack": "comment_strip",
+    "attack_label": "Comm",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "attack": "control_flow_flatten",
+    "attack_label": "C-Flow",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "attack": "identifier_rename",
+    "attack_label": "Rename",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "attack": "noise_insert",
+    "attack_label": "Noise",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "attack": "whitespace_normalize",
+    "attack_label": "WS",
+    "attacked_detect_rate": 0.0,
+    "row_count": 4016
+  }
+]

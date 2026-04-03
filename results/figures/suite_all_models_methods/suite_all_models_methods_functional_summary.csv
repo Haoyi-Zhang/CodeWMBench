@@ -1,0 +1,7 @@
+series,metric,value,aggregation_mode,paper_track,row_count,report_count,source_groups
+Clean,Compile,0.0112,suite_source_aggregate,generation_time,112448,112,"['public_mbxp_5lang', 'crafted_stress', 'public_humaneval_plus', 'crafted_original', 'public_mbpp_plus', 'public_humaneval_x', 'crafted_translation']"
+Clean,Pass,0.0048,suite_source_aggregate,generation_time,112448,112,"['public_mbxp_5lang', 'crafted_stress', 'public_humaneval_plus', 'crafted_original', 'public_mbpp_plus', 'public_humaneval_x', 'crafted_translation']"
+Watermarked,Compile,0.0188,suite_source_aggregate,generation_time,112448,112,"['public_mbxp_5lang', 'crafted_stress', 'public_humaneval_plus', 'crafted_original', 'public_mbpp_plus', 'public_humaneval_x', 'crafted_translation']"
+Watermarked,Pass,0.0024,suite_source_aggregate,generation_time,112448,112,"['public_mbxp_5lang', 'crafted_stress', 'public_humaneval_plus', 'crafted_original', 'public_mbpp_plus', 'public_humaneval_x', 'crafted_translation']"
+Attacked,Compile,0.0343,suite_source_aggregate,generation_time,112448,112,"['public_mbxp_5lang', 'crafted_stress', 'public_humaneval_plus', 'crafted_original', 'public_mbpp_plus', 'public_humaneval_x', 'crafted_translation']"
+Attacked,Pass,0.0155,suite_source_aggregate,generation_time,112448,112,"['public_mbxp_5lang', 'crafted_stress', 'public_humaneval_plus', 'crafted_original', 'public_mbpp_plus', 'public_humaneval_x', 'crafted_translation']"

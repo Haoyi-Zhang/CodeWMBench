@@ -1,0 +1,17 @@
+method,paper_label,model,model_label,CodeWMScore,row_count
+stone_runtime,STONE,Qwen/Qwen2.5-Coder-14B-Instruct,Qwen14,21.6632,7028
+stone_runtime,STONE,Qwen/Qwen2.5-Coder-7B-Instruct,Qwen7,17.1613,7028
+stone_runtime,STONE,bigcode/starcoder2-7b,Star2-7B,4.5843,7028
+stone_runtime,STONE,deepseek-ai/deepseek-coder-6.7b-instruct,DeepSeek,7.5916,7028
+ewd_runtime,EWD,Qwen/Qwen2.5-Coder-14B-Instruct,Qwen14,27.6628,7028
+ewd_runtime,EWD,Qwen/Qwen2.5-Coder-7B-Instruct,Qwen7,23.905,7028
+ewd_runtime,EWD,bigcode/starcoder2-7b,Star2-7B,15.2044,7028
+ewd_runtime,EWD,deepseek-ai/deepseek-coder-6.7b-instruct,DeepSeek,3.8369,7028
+kgw_runtime,KGW-RT,Qwen/Qwen2.5-Coder-14B-Instruct,Qwen14,27.9781,7028
+kgw_runtime,KGW-RT,Qwen/Qwen2.5-Coder-7B-Instruct,Qwen7,16.9074,7028
+kgw_runtime,KGW-RT,bigcode/starcoder2-7b,Star2-7B,13.6167,7028
+kgw_runtime,KGW-RT,deepseek-ai/deepseek-coder-6.7b-instruct,DeepSeek,7.2004,7028
+sweet_runtime,SWEET,Qwen/Qwen2.5-Coder-14B-Instruct,Qwen14,23.7071,7028
+sweet_runtime,SWEET,Qwen/Qwen2.5-Coder-7B-Instruct,Qwen7,29.4221,7028
+sweet_runtime,SWEET,bigcode/starcoder2-7b,Star2-7B,5.9765,7028
+sweet_runtime,SWEET,deepseek-ai/deepseek-coder-6.7b-instruct,DeepSeek,0.0,7028

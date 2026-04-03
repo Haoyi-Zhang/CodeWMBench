@@ -1,6 +1,6 @@
 # Local Model Matrix
 
-The active `TOSEM-compact` suite compares the same four imported official watermark baselines on each of the following local backbones:
+The active `TOSEM-compact` suite compares the same four pinned upstream baseline implementations, executed through CodeWMBench adapters, on each of the following local backbones:
 
 - `Qwen/Qwen2.5-Coder-14B-Instruct`
 - `Qwen/Qwen2.5-Coder-7B-Instruct`
@@ -21,9 +21,9 @@ This gives the compact suite three model families plus one within-family scale c
 - `ewd_runtime`
 - `kgw_runtime`
 
-Within each matched model slice, these four official baselines are compared on the same benchmark rows. Cross-model execution may run in parallel, but ranking and score aggregation remain aligned to matched `model x method x source` slices.
+Within each matched model slice, these four baseline implementations are compared on the same benchmark rows. Cross-model execution may run in parallel, but ranking and score aggregation remain aligned to matched `model x method x source` slices.
 
-For multilingual suite sources, the active official-runtime execution path uses the common supported slice across the four imported methods: `python`, `cpp`, and `java`.
+For multilingual suite sources, the active official-runtime execution path uses the common supported slice across the four imported methods: `python`, `cpp`, and `java`. `HumanEval-X` and `MBXP-5lang` remain five-language inventory datasets in the repository, but the active public runtime comparison scores only that `python/cpp/java` slice.
 
 ## Active Suite Manifests
 
@@ -35,7 +35,7 @@ For multilingual suite sources, the active official-runtime execution path uses 
 
 ## Runtime Expectations
 
-The imported official baselines load local Hugging Face weights from the local cache. The active public workflow is local-model-only; API-backed execution is not part of the compact suite.
+The pinned upstream baseline implementations load local Hugging Face weights through the project runtime adapters. The active public workflow is local-model-only; API-backed execution is not part of the compact suite.
 
 For a 40 GB GPU card, the safe defaults remain:
 

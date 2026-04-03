@@ -1,16 +1,12 @@
 # CodeWMBench
 
-`CodeWMBench` is an executable benchmark suite for evaluating code watermarking methods under realistic generation-time conditions. The active public release is the **TOSEM-compact** slice: four imported official baselines, four local code models, seven atomic benchmark sources, and the full five-dimensional scorecard headed by `CodeWMScore`.
+`CodeWMBench` is an executable benchmark suite for evaluating code watermarking methods under realistic generation-time conditions. The active public release is the **TOSEM-compact** slice: four pinned upstream baseline implementations executed through CodeWMBench adapters under a shared benchmark-layer generation policy, four local code models, seven atomic benchmark sources, and the full five-dimensional scorecard headed by `CodeWMScore`.
 
-The repository is organized for three use cases:
-
-- browse the benchmark definition, dataset statistics, formulas, and summary artifacts
-- regenerate figures and tables from released result artifacts without rerunning models
-- rerun the compact precheck or the compact full matrix on a Linux GPU host
+The public release is organized around a browse-first reviewer path. Start by reading the repository-tracked benchmark definition, dataset statistics, formulas, and summary artifacts. Regenerating figures from raw artifacts and rerunning the compact workflow are documented secondary paths.
 
 ## What Is In Scope
 
-The active official runtime baseline roster is:
+The active runtime baseline implementations used in this release are:
 
 - `stone_runtime`
 - `sweet_runtime`
@@ -47,7 +43,7 @@ The aggregate suite score uses the following seven atomic source groups:
 
 `HumanEval` remains part of the documented inventory but is excluded from the aggregate suite score to avoid double-counting against `HumanEval+`.
 
-For multilingual official-runtime comparisons, the current executable common-support slice is `python`, `cpp`, and `java`. The five-language inventory is still documented and auditable, but it is not the active official-runtime execution slice for `HumanEval-X` and `MBXP-5lang`.
+`HumanEval-X` and `MBXP-5lang` remain five-language inventory datasets, but the active runtime comparison scores only the `python/cpp/java` common-support execution slice. The same compact execution-slice rule applies to the active crafted sources.
 
 ## TOSEM-Compact Slice
 
@@ -63,6 +59,10 @@ The published compact slice keeps the benchmark structure intact while reducing 
 
 The compact public and crafted slices are deterministic, versioned inputs stored under [`data/compact/collections`](data/compact/collections) and [`data/compact/crafted`](data/compact/crafted). `data/interim/` is reserved for build-time or diagnostic intermediates and is not part of the active public workflow.
 
+The canonical benchmark-definition table for the public release lives under [`results/tables/dataset_statistics/benchmark_definition_summary.csv`](results/tables/dataset_statistics/benchmark_definition_summary.csv) and [`results/tables/dataset_statistics/benchmark_definition_summary.json`](results/tables/dataset_statistics/benchmark_definition_summary.json).
+
+README-facing figures label the multilingual compact sources as `HumanEval-X (py/cpp/java slice)` and `MBXP-5lang (py/cpp/java slice)` in scope-sensitive form; they should not be read as the full five-language inventories.
+
 ![TOSEM-compact slice composition](results/figures/dataset_statistics/compact_slice_composition.png)
 
 ## Repository Layout
@@ -73,10 +73,10 @@ The compact public and crafted slices are deterministic, versioned inputs stored
 - `data/compact/collections/`: active TOSEM-compact benchmark collections
 - `data/compact/crafted/`: active crafted benchmark snapshots used to build compact collections
 - `docs/`: public documentation, formulas, datasets, artifacts, and reproduction guides
-- `results/figures/`: dataset statistics figures plus reserved directories for regenerated full-run summaries
-- `results/tables/`: dataset statistics tables plus reserved directories for regenerated full-run summaries
+- `results/figures/`: dataset statistics figures plus materialized full-run summary figures
+- `results/tables/`: dataset statistics tables plus materialized full-run summary tables
 - `scripts/`: data preparation, manifest building, audits, figure export, packaging, and helper entrypoints
-- `third_party/`: pinned upstream provenance manifests for the four official baselines
+- `third_party/`: pinned upstream provenance manifests for the four baseline implementations used in this release
 
 ## Scoring
 
@@ -97,18 +97,34 @@ The exact formulas are documented in [`docs/metrics.md`](docs/metrics.md).
 
 ## Public Results And Artifacts
 
-The public repository keeps code, compact benchmark inputs, dataset statistics, and repository-tracked summary-facing outputs. Large raw full-run outputs are distributed outside git.
+In a fresh public clone, the repository guarantees:
+
+- code
+- compact benchmark inputs
+- dataset statistics figures and tables
+- documentation and reproduction scripts
+- materialized full-run summary figures and tables
+
+The repository does **not** guarantee the raw `112/112 success` full-run tree. Large raw full-run outputs are distributed outside git via the released artifact path described in [`docs/artifacts.md`](docs/artifacts.md).
 
 - dataset statistics figures live under [`results/figures/dataset_statistics`](results/figures/dataset_statistics)
 - dataset statistics tables live under [`results/tables/dataset_statistics`](results/tables/dataset_statistics)
-- the repository tracks reserved export directories for full-run summaries under [`results/figures/suite_all_models_methods`](results/figures/suite_all_models_methods) and [`results/tables/suite_all_models_methods`](results/tables/suite_all_models_methods)
-- in a fresh public clone, those directories may contain only README placeholders until a released raw artifact is restored or a local rerun is performed
-- final full-run summary figures and tables are regenerated into those directories from the released raw artifact or a local rerun
+- materialized full-run summary figures live under [`results/figures/suite_all_models_methods`](results/figures/suite_all_models_methods)
+- materialized full-run summary tables live under [`results/tables/suite_all_models_methods`](results/tables/suite_all_models_methods)
+- canonical paper exact-value tables are [`suite_all_models_methods_method_master_leaderboard.*`](results/tables/suite_all_models_methods) and [`suite_all_models_methods_method_model_leaderboard.*`](results/tables/suite_all_models_methods)
+- if the paper body keeps the main exact-value leaderboard table, the visual overall leaderboard should stay in the companion repo or supplement rather than repeating the same ranking twice
+- those summary outputs can be regenerated from the released raw artifact or a local rerun
 - raw full-run artifacts are documented in [`docs/artifacts.md`](docs/artifacts.md)
 
-Use the Level 2 reproduction path in [`docs/reproduce.md`](docs/reproduce.md) to download raw artifacts and regenerate the full-run summary figures and tables locally.
+Use [`docs/reproduce.md`](docs/reproduce.md) for the canonical three-level reviewer path:
 
-## Quick Start
+1. browse the repository-tracked summary assets
+2. regenerate full-run summaries from a published raw artifact
+3. rerun the compact workflow on a GPU host
+
+Level 1 is the default reviewer path. If the archival raw-results artifact has not been published yet, Level 2 should be read as a documented future regeneration path rather than an immediately available download.
+
+## Linux GPU Rerun Quick Start
 
 Install lightweight dependencies:
 
@@ -172,15 +188,16 @@ python scripts/export_dataset_statistics.py
 - [`docs/reproduce.md`](docs/reproduce.md): step-by-step reproduction paths
 - [`docs/datasets.md`](docs/datasets.md): dataset inventory, compact slice rules, and curation notes
 - [`docs/metrics.md`](docs/metrics.md): mathematical score definitions
-- [`docs/baselines.md`](docs/baselines.md): official baseline provenance and fetch rules
+- [`docs/baselines.md`](docs/baselines.md): pinned upstream baseline provenance and fetch rules
 - [`docs/artifacts.md`](docs/artifacts.md): raw artifact distribution policy
 - [`docs/remote_linux_gpu.md`](docs/remote_linux_gpu.md): Linux GPU rerun workflow
 
 ## Provenance And Fetch Policy
 
 - model weights are **not** distributed in this repository
-- official baseline checkouts are **not** vendored here unless redistributable and explicitly packaged
+- pinned upstream baseline checkouts are **not** vendored here unless redistributable and explicitly packaged
 - model weights are pulled from Hugging Face by exact model identifier
-- official baselines are fetched from pinned upstream repositories using the manifests in [`third_party`](third_party)
+- baseline implementations are fetched from pinned upstream repositories using the manifests in [`third_party`](third_party), while orchestration, local model loading, and decoding policy remain benchmark-controlled
+- upstream provenance does not imply uniform redistribution permission; license status is tracked per manifest
 
-The active compact workflow assumes reproducible local-model execution and imported official baseline adapters. API-backed execution is not part of the current public benchmark path.
+The active compact workflow assumes reproducible local-model execution and project-native adapters around the pinned upstream baseline logic. API-backed execution is not part of the current public benchmark path.

@@ -8,5 +8,5 @@
   "source_relative": ".",
   "public_external_root": "external_checkout/EWD",
   "method_symbol": "EWD",
-  "notes": "Pinned official EWD source. The benchmark adapter imports upstream processors without modifying algorithm internals."
+  "notes": "Pinned EWD upstream implementation. CodeWMBench keeps the watermark algorithm logic intact while routing orchestration, local model loading, and decoding policy through the shared benchmark runner."
 }

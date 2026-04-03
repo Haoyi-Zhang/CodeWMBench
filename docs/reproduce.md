@@ -1,21 +1,29 @@
 # Reproducing `CodeWMBench`
 
-This repository supports three practical reproduction levels.
+Start with **Level 1** unless you explicitly need regenerated full-run summaries or an end-to-end GPU rerun. Level 2 only becomes immediately executable after the archival raw-results artifact is published.
 
 ## Level 1: Browse Summary Artifacts
 
 No GPU is required.
 
-Use the repository-tracked dataset statistics, documentation, and any regenerated summary figures/tables:
+Use the repository-tracked dataset statistics, documentation, and the materialized summary figures/tables shipped with this snapshot:
 
 - [`results/figures`](../results/figures)
 - [`results/tables`](../results/tables)
 
-This is the fastest path for readers who only want to inspect the benchmark design, dataset statistics, metrics, and any repository-tracked summary outputs. In a fresh public clone, the full-run summary export directories may still contain only placeholder README files until raw artifacts are restored.
+This is the default reviewer path. It is the fastest way to inspect the benchmark design, dataset statistics, scoring rules, and the repository-tracked summary outputs that ship with the public companion repo.
+
+If you only want to refresh the repository-tracked full-run figure files from the shipped summary JSON/tables, without restoring the raw matrix tree, run:
+
+```bash
+python scripts/render_materialized_summary_figures.py --summary-dir results/figures/suite_all_models_methods --table-dir results/tables/suite_all_models_methods --output-dir results/figures/suite_all_models_methods
+```
 
 ## Level 2: Regenerate Figures And Tables From Released Artifacts
 
 No GPU is required.
+
+Use this path **after** the archival raw-results artifact described in [`docs/artifacts.md`](artifacts.md) has been published.
 
 1. Download the released raw result artifact described in [`docs/artifacts.md`](artifacts.md)
 2. Restore the raw result tree under `results/matrix/`
@@ -28,7 +36,7 @@ python scripts/export_full_run_tables.py --matrix-index results/matrix/suite_all
 python scripts/export_dataset_statistics.py
 ```
 
-This path reproduces the summary outputs without rerunning models. Until a Zenodo record is minted, the repository only ships the artifact manifest/checksum templates and the regeneration commands.
+This path reproduces the summary outputs without rerunning models. Until a Zenodo record is minted, the repository only ships the raw-artifact manifest/checksum templates and the regeneration commands.
 
 If Times New Roman is unavailable on the machine, you can use `--allow-font-fallback` for a quick inspection pass. Final camera-ready figures should still be rendered with `--require-times-new-roman`.
 
@@ -74,6 +82,6 @@ See [`docs/remote_linux_gpu.md`](remote_linux_gpu.md) for the recommended upstre
 ## Notes
 
 - model weights are not distributed with this repository
-- official baseline checkouts are not stored in git
+- pinned upstream baseline checkouts are not stored in git
 - the active multilingual official-runtime comparison slice is `python/cpp/java`
 - `HumanEval` remains part of the inventory but is not part of the aggregate compact score

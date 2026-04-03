@@ -1,0 +1,5 @@
+method,paper_label,origin,detection_reliability,utility
+stone_runtime,STONE,upstream,0.7649,0.327
+ewd_runtime,EWD,upstream,0.9004,0.3629
+kgw_runtime,KGW-RT,upstream,0.7619,0.3633
+sweet_runtime,SWEET,upstream,0.8759,0.3129

@@ -1,0 +1,254 @@
+[
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "source_group": "public_humaneval_plus",
+    "source_label": "HumanEval+",
+    "source_compact_label": "HE+",
+    "slice_core": 0.5064,
+    "row_count": 4592
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "source_group": "public_mbpp_plus",
+    "source_label": "MBPP+",
+    "source_compact_label": "MBPP+",
+    "slice_core": 0.5343,
+    "row_count": 6720
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "source_group": "public_humaneval_x",
+    "source_label": "HumanEval-X (py/cpp/java slice)",
+    "source_compact_label": "HEX",
+    "slice_core": 0.4857,
+    "row_count": 3360
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "source_group": "public_mbxp_5lang",
+    "source_label": "MBXP-5lang (py/cpp/java slice)",
+    "source_compact_label": "MBXP",
+    "slice_core": 0.6026,
+    "row_count": 3360
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "source_group": "crafted_original",
+    "source_label": "Crafted Original",
+    "source_compact_label": "Orig.",
+    "slice_core": 0.4376,
+    "row_count": 3360
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "source_group": "crafted_translation",
+    "source_label": "Crafted Translation",
+    "source_compact_label": "Trans.",
+    "slice_core": 0.4573,
+    "row_count": 3360
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "source_group": "crafted_stress",
+    "source_label": "Crafted Stress",
+    "source_compact_label": "Stress",
+    "slice_core": 0.4394,
+    "row_count": 3360
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "source_group": "public_humaneval_plus",
+    "source_label": "HumanEval+",
+    "source_compact_label": "HE+",
+    "slice_core": 0.4503,
+    "row_count": 4592
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "source_group": "public_mbpp_plus",
+    "source_label": "MBPP+",
+    "source_compact_label": "MBPP+",
+    "slice_core": 0.4876,
+    "row_count": 6720
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "source_group": "public_humaneval_x",
+    "source_label": "HumanEval-X (py/cpp/java slice)",
+    "source_compact_label": "HEX",
+    "slice_core": 0.4694,
+    "row_count": 3360
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "source_group": "public_mbxp_5lang",
+    "source_label": "MBXP-5lang (py/cpp/java slice)",
+    "source_compact_label": "MBXP",
+    "slice_core": 0.5096,
+    "row_count": 3360
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "source_group": "crafted_original",
+    "source_label": "Crafted Original",
+    "source_compact_label": "Orig.",
+    "slice_core": 0.3983,
+    "row_count": 3360
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "source_group": "crafted_translation",
+    "source_label": "Crafted Translation",
+    "source_compact_label": "Trans.",
+    "slice_core": 0.4005,
+    "row_count": 3360
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "source_group": "crafted_stress",
+    "source_label": "Crafted Stress",
+    "source_compact_label": "Stress",
+    "slice_core": 0.3207,
+    "row_count": 3360
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "source_group": "public_humaneval_plus",
+    "source_label": "HumanEval+",
+    "source_compact_label": "HE+",
+    "slice_core": 0.4477,
+    "row_count": 4592
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "source_group": "public_mbpp_plus",
+    "source_label": "MBPP+",
+    "source_compact_label": "MBPP+",
+    "slice_core": 0.4573,
+    "row_count": 6720
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "source_group": "public_humaneval_x",
+    "source_label": "HumanEval-X (py/cpp/java slice)",
+    "source_compact_label": "HEX",
+    "slice_core": 0.4305,
+    "row_count": 3360
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "source_group": "public_mbxp_5lang",
+    "source_label": "MBXP-5lang (py/cpp/java slice)",
+    "source_compact_label": "MBXP",
+    "slice_core": 0.5512,
+    "row_count": 3360
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "source_group": "crafted_original",
+    "source_label": "Crafted Original",
+    "source_compact_label": "Orig.",
+    "slice_core": 0.355,
+    "row_count": 3360
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "source_group": "crafted_translation",
+    "source_label": "Crafted Translation",
+    "source_compact_label": "Trans.",
+    "slice_core": 0.3316,
+    "row_count": 3360
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "source_group": "crafted_stress",
+    "source_label": "Crafted Stress",
+    "source_compact_label": "Stress",
+    "slice_core": 0.3283,
+    "row_count": 3360
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "source_group": "public_humaneval_plus",
+    "source_label": "HumanEval+",
+    "source_compact_label": "HE+",
+    "slice_core": 0.4605,
+    "row_count": 4592
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "source_group": "public_mbpp_plus",
+    "source_label": "MBPP+",
+    "source_compact_label": "MBPP+",
+    "slice_core": 0.4686,
+    "row_count": 6720
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "source_group": "public_humaneval_x",
+    "source_label": "HumanEval-X (py/cpp/java slice)",
+    "source_compact_label": "HEX",
+    "slice_core": 0.4683,
+    "row_count": 3360
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "source_group": "public_mbxp_5lang",
+    "source_label": "MBXP-5lang (py/cpp/java slice)",
+    "source_compact_label": "MBXP",
+    "slice_core": 0.4629,
+    "row_count": 3360
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "source_group": "crafted_original",
+    "source_label": "Crafted Original",
+    "source_compact_label": "Orig.",
+    "slice_core": 0.3902,
+    "row_count": 3360
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "source_group": "crafted_translation",
+    "source_label": "Crafted Translation",
+    "source_compact_label": "Trans.",
+    "slice_core": 0.3952,
+    "row_count": 3360
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "source_group": "crafted_stress",
+    "source_label": "Crafted Stress",
+    "source_compact_label": "Stress",
+    "slice_core": 0.3849,
+    "row_count": 3360
+  }
+]

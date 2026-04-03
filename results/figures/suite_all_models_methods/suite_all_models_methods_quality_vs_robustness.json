@@ -1,0 +1,30 @@
+[
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "origin": "upstream",
+    "utility": 0.327,
+    "robustness": 0.407
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "origin": "upstream",
+    "utility": 0.3629,
+    "robustness": 0.1582
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "origin": "upstream",
+    "utility": 0.3633,
+    "robustness": 0.1738
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "origin": "upstream",
+    "utility": 0.3129,
+    "robustness": 0.196
+  }
+]

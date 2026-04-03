@@ -1,0 +1,130 @@
+[
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "model_label": "Qwen14",
+    "CodeWMScore": 21.6632,
+    "row_count": 7028
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "model_label": "Qwen7",
+    "CodeWMScore": 17.1613,
+    "row_count": 7028
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "model": "bigcode/starcoder2-7b",
+    "model_label": "Star2-7B",
+    "CodeWMScore": 4.5843,
+    "row_count": 7028
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "model_label": "DeepSeek",
+    "CodeWMScore": 7.5916,
+    "row_count": 7028
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "model_label": "Qwen14",
+    "CodeWMScore": 27.6628,
+    "row_count": 7028
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "model_label": "Qwen7",
+    "CodeWMScore": 23.905,
+    "row_count": 7028
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "model": "bigcode/starcoder2-7b",
+    "model_label": "Star2-7B",
+    "CodeWMScore": 15.2044,
+    "row_count": 7028
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "model_label": "DeepSeek",
+    "CodeWMScore": 3.8369,
+    "row_count": 7028
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "model_label": "Qwen14",
+    "CodeWMScore": 27.9781,
+    "row_count": 7028
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "model_label": "Qwen7",
+    "CodeWMScore": 16.9074,
+    "row_count": 7028
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "model": "bigcode/starcoder2-7b",
+    "model_label": "Star2-7B",
+    "CodeWMScore": 13.6167,
+    "row_count": 7028
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "model_label": "DeepSeek",
+    "CodeWMScore": 7.2004,
+    "row_count": 7028
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "model_label": "Qwen14",
+    "CodeWMScore": 23.7071,
+    "row_count": 7028
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "model_label": "Qwen7",
+    "CodeWMScore": 29.4221,
+    "row_count": 7028
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "model": "bigcode/starcoder2-7b",
+    "model_label": "Star2-7B",
+    "CodeWMScore": 5.9765,
+    "row_count": 7028
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "model_label": "DeepSeek",
+    "CodeWMScore": 0.0,
+    "row_count": 7028
+  }
+]

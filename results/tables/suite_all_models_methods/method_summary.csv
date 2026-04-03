@@ -1,0 +1,5 @@
+CodeWMScore,attacked_pass_preservation,attacked_test_pass_rate,clean_compile_success_rate,clean_pass@1,clean_test_pass_rate,detection_reliability,duration_hours_mean,duration_hours_total,duration_seconds_mean,duration_seconds_total,generalization,method,negative_control_fpr,negative_control_support_rate,report_count,robustness,row_count,slice_core,stealth,utility,watermarked_pass@1,watermarked_pass_preservation,watermarked_test_pass_rate
+8.1789,0.5714,0.0179,0.008,0.002,0.002,0.7669,0.6681,18.7077,2405.2725,67347.63,0.876,stone_runtime,0.0846,1.0,28,0.4111,28112,0.4948,0.5027,0.3629,0.004,0.1429,0.004
+7.2429,0.5714,0.0187,0.009,0.0,0.0,0.7719,2.284,63.9526,8222.4775,230229.37,0.8337,kgw_runtime,0.0,1.0,28,0.1761,28112,0.4145,0.5088,0.3633,0.001,0.1429,0.001
+3.7694,0.5714,0.0194,0.011,0.004,0.004,0.9026,7.2008,201.6212,25922.72,725836.16,0.8532,ewd_runtime,0.0,1.0,28,0.1592,28112,0.4338,0.5092,0.3383,0.002,0.0716,0.002
+0.0,0.5714,0.0189,0.007,0.0,0.0,0.8766,4.1148,115.2136,14813.1743,414768.88,0.8841,sweet_runtime,0.0,1.0,28,0.1956,28112,0.4329,0.5139,0.3132,0.0,0.0,0.0

@@ -1,0 +1,46 @@
+[
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "origin": "upstream",
+    "detection_reliability_contribution": 0.153,
+    "robustness_contribution": 0.1017,
+    "utility_contribution": 0.0818,
+    "stealth_contribution": 0.0508,
+    "generalization_contribution": 0.172,
+    "base_score": 0.5593
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "origin": "upstream",
+    "detection_reliability_contribution": 0.1752,
+    "robustness_contribution": 0.049,
+    "utility_contribution": 0.0782,
+    "stealth_contribution": 0.0519,
+    "generalization_contribution": 0.1754,
+    "base_score": 0.5297
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "origin": "upstream",
+    "detection_reliability_contribution": 0.1801,
+    "robustness_contribution": 0.0396,
+    "utility_contribution": 0.0907,
+    "stealth_contribution": 0.0514,
+    "generalization_contribution": 0.1666,
+    "base_score": 0.5284
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "origin": "upstream",
+    "detection_reliability_contribution": 0.1524,
+    "robustness_contribution": 0.0435,
+    "utility_contribution": 0.0908,
+    "stealth_contribution": 0.0513,
+    "generalization_contribution": 0.1692,
+    "base_score": 0.5071
+  }
+]

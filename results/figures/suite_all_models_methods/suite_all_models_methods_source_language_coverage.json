@@ -1,0 +1,128 @@
+[
+  {
+    "source_group": "public_humaneval_plus",
+    "source_label": "HumanEval+",
+    "language": "python",
+    "count": 0
+  },
+  {
+    "source_group": "public_humaneval_plus",
+    "source_label": "HumanEval+",
+    "language": "cpp",
+    "count": 0
+  },
+  {
+    "source_group": "public_humaneval_plus",
+    "source_label": "HumanEval+",
+    "language": "java",
+    "count": 0
+  },
+  {
+    "source_group": "public_mbpp_plus",
+    "source_label": "MBPP+",
+    "language": "python",
+    "count": 240
+  },
+  {
+    "source_group": "public_mbpp_plus",
+    "source_label": "MBPP+",
+    "language": "cpp",
+    "count": 0
+  },
+  {
+    "source_group": "public_mbpp_plus",
+    "source_label": "MBPP+",
+    "language": "java",
+    "count": 0
+  },
+  {
+    "source_group": "public_humaneval_x",
+    "source_label": "HumanEval-X (py/cpp/java slice)",
+    "language": "python",
+    "count": 40
+  },
+  {
+    "source_group": "public_humaneval_x",
+    "source_label": "HumanEval-X (py/cpp/java slice)",
+    "language": "cpp",
+    "count": 40
+  },
+  {
+    "source_group": "public_humaneval_x",
+    "source_label": "HumanEval-X (py/cpp/java slice)",
+    "language": "java",
+    "count": 40
+  },
+  {
+    "source_group": "public_mbxp_5lang",
+    "source_label": "MBXP-5lang (py/cpp/java slice)",
+    "language": "python",
+    "count": 40
+  },
+  {
+    "source_group": "public_mbxp_5lang",
+    "source_label": "MBXP-5lang (py/cpp/java slice)",
+    "language": "cpp",
+    "count": 40
+  },
+  {
+    "source_group": "public_mbxp_5lang",
+    "source_label": "MBXP-5lang (py/cpp/java slice)",
+    "language": "java",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_original",
+    "source_label": "Crafted Original",
+    "language": "python",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_original",
+    "source_label": "Crafted Original",
+    "language": "cpp",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_original",
+    "source_label": "Crafted Original",
+    "language": "java",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_translation",
+    "source_label": "Crafted Translation",
+    "language": "python",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_translation",
+    "source_label": "Crafted Translation",
+    "language": "cpp",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_translation",
+    "source_label": "Crafted Translation",
+    "language": "java",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_stress",
+    "source_label": "Crafted Stress",
+    "language": "python",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_stress",
+    "source_label": "Crafted Stress",
+    "language": "cpp",
+    "count": 40
+  },
+  {
+    "source_group": "crafted_stress",
+    "source_label": "Crafted Stress",
+    "language": "java",
+    "count": 40
+  }
+]

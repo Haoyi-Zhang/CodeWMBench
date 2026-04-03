@@ -1,0 +1,110 @@
+[
+  {
+    "series": "Clean",
+    "metric": "Compile",
+    "value": 0.0112,
+    "aggregation_mode": "suite_source_aggregate",
+    "paper_track": "generation_time",
+    "row_count": 112448,
+    "report_count": 112,
+    "source_groups": [
+      "public_mbxp_5lang",
+      "crafted_stress",
+      "public_humaneval_plus",
+      "crafted_original",
+      "public_mbpp_plus",
+      "public_humaneval_x",
+      "crafted_translation"
+    ]
+  },
+  {
+    "series": "Clean",
+    "metric": "Pass",
+    "value": 0.0048,
+    "aggregation_mode": "suite_source_aggregate",
+    "paper_track": "generation_time",
+    "row_count": 112448,
+    "report_count": 112,
+    "source_groups": [
+      "public_mbxp_5lang",
+      "crafted_stress",
+      "public_humaneval_plus",
+      "crafted_original",
+      "public_mbpp_plus",
+      "public_humaneval_x",
+      "crafted_translation"
+    ]
+  },
+  {
+    "series": "Watermarked",
+    "metric": "Compile",
+    "value": 0.0188,
+    "aggregation_mode": "suite_source_aggregate",
+    "paper_track": "generation_time",
+    "row_count": 112448,
+    "report_count": 112,
+    "source_groups": [
+      "public_mbxp_5lang",
+      "crafted_stress",
+      "public_humaneval_plus",
+      "crafted_original",
+      "public_mbpp_plus",
+      "public_humaneval_x",
+      "crafted_translation"
+    ]
+  },
+  {
+    "series": "Watermarked",
+    "metric": "Pass",
+    "value": 0.0024,
+    "aggregation_mode": "suite_source_aggregate",
+    "paper_track": "generation_time",
+    "row_count": 112448,
+    "report_count": 112,
+    "source_groups": [
+      "public_mbxp_5lang",
+      "crafted_stress",
+      "public_humaneval_plus",
+      "crafted_original",
+      "public_mbpp_plus",
+      "public_humaneval_x",
+      "crafted_translation"
+    ]
+  },
+  {
+    "series": "Attacked",
+    "metric": "Compile",
+    "value": 0.0343,
+    "aggregation_mode": "suite_source_aggregate",
+    "paper_track": "generation_time",
+    "row_count": 112448,
+    "report_count": 112,
+    "source_groups": [
+      "public_mbxp_5lang",
+      "crafted_stress",
+      "public_humaneval_plus",
+      "crafted_original",
+      "public_mbpp_plus",
+      "public_humaneval_x",
+      "crafted_translation"
+    ]
+  },
+  {
+    "series": "Attacked",
+    "metric": "Pass",
+    "value": 0.0155,
+    "aggregation_mode": "suite_source_aggregate",
+    "paper_track": "generation_time",
+    "row_count": 112448,
+    "report_count": 112,
+    "source_groups": [
+      "public_mbxp_5lang",
+      "crafted_stress",
+      "public_humaneval_plus",
+      "crafted_original",
+      "public_mbpp_plus",
+      "public_humaneval_x",
+      "crafted_translation"
+    ]
+  }
+]

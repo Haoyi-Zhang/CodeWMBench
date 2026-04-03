@@ -1,6 +1,6 @@
 # Linux GPU Workflow
 
-This document describes the Linux GPU rerun path for the active `TOSEM-compact` workflow. The compact full matrix uses four local backbones and four imported official baselines. The recommended control flow is:
+This document describes the Linux GPU rerun path for the active `TOSEM-compact` workflow. The compact full matrix uses four local backbones and four pinned upstream baseline implementations executed through CodeWMBench adapters. The recommended control flow is:
 
 1. bootstrap the host
 2. clean active outputs
@@ -48,7 +48,7 @@ Minimum supported host versions for local validation:
 - `node`: `12.22+`
 - `go`: `1.18+`
 
-The active multilingual official-runtime slice is `python`, `cpp`, and `java`.
+The active multilingual official-runtime slice is `python`, `cpp`, and `java`. `HumanEval-X` and `MBXP-5lang` remain five-language inventory datasets in the repository, but the active runtime comparison executes and scores only the `python/cpp/java` common-support slice.
 
 ## Suggested Sequence
 

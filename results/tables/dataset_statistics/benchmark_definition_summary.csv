@@ -1,0 +1,9 @@
+source,slug,source_group,source_type,inventory_record_count,compact_record_count,scored_in_aggregate,execution_slice,inventory_languages,execution_languages,sampling_rule,inventory_status
+HumanEval,human_eval,public_human_eval,public,164,0,False,inventory only,python,,inventory snapshot,inventory_documented
+HumanEval+,humaneval_plus,public_humaneval_plus,public,164,164,True,python,python,python,full retained,inventory_documented
+MBPP+,mbpp_plus,public_mbpp_plus,public,378,240,True,python,python,python,deterministic compact sample,inventory_documented
+HumanEval-X (5-lang inv.; py/cpp/java exec.),humaneval_x,public_humaneval_x,public,820,120,True,python/cpp/java,"cpp,go,java,javascript,python","cpp,java,python",deterministic common-support slice,inventory_documented
+MBXP-5lang (5-lang inv.; py/cpp/java exec.),mbxp_5lang,public_mbxp_5lang,public,4693,120,True,python/cpp/java,"cpp,go,java,javascript,python","cpp,java,python",deterministic common-support slice,inventory_documented
+Crafted Original,crafted_original,crafted_original,crafted,1500,120,True,python/cpp/java,"cpp,go,java,javascript,python","cpp,java,python",deterministic family/category-balanced compact sample,inventory_documented
+Crafted Translation,crafted_translation,crafted_translation,crafted,1000,120,True,python/cpp/java,"cpp,go,java,javascript,python","cpp,java,python",deterministic family/category-balanced compact sample,inventory_documented
+Crafted Stress,crafted_stress,crafted_stress,crafted,750,120,True,python/cpp/java,"cpp,go,java,javascript,python","cpp,java,python",deterministic family/category-balanced compact sample,inventory_documented

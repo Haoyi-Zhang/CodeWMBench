@@ -1,0 +1,26 @@
+[
+  {
+    "method": "ewd_runtime",
+    "duration_hours_total": 201.6212,
+    "duration_hours_mean": 7.2008,
+    "report_count": 28
+  },
+  {
+    "method": "sweet_runtime",
+    "duration_hours_total": 115.2136,
+    "duration_hours_mean": 4.1148,
+    "report_count": 28
+  },
+  {
+    "method": "kgw_runtime",
+    "duration_hours_total": 63.9526,
+    "duration_hours_mean": 2.284,
+    "report_count": 28
+  },
+  {
+    "method": "stone_runtime",
+    "duration_hours_total": 18.7077,
+    "duration_hours_mean": 0.6681,
+    "report_count": 28
+  }
+]

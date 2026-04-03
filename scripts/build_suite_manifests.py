@@ -756,7 +756,7 @@ def main() -> int:
     manifests = {
         ROOT / "configs" / "matrices" / "suite_all_models_methods.json": _manifest_payload(
             profile="suite_all_models_methods",
-            description="TOSEM-compact CodeWMBench official full matrix: 4 local backbones x 4 official baselines across 7 compact atomic benchmark sources.",
+            description="TOSEM-compact CodeWMBench full matrix: 4 local backbones x 4 pinned baseline implementations across 7 compact atomic benchmark sources.",
             runs=_suite_run_items(),
             model_roster=SUITE_MODEL_ROSTER,
             benchmark_roster=suite_benchmark_roster(),

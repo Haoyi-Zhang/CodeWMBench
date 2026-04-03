@@ -51,7 +51,7 @@ _METHOD_SPECS: dict[str, dict[str, str]] = {
         "license_status": "unverified",
         "env_root": "CODEWMBENCH_STONE_UPSTREAM_ROOT",
         "env_manifest": "CODEWMBENCH_STONE_UPSTREAM_MANIFEST",
-        "notes": "Pinned official STONE checkout. Benchmark adapter imports upstream code without modifying algorithm internals.",
+        "notes": "Pinned STONE upstream implementation. CodeWMBench keeps the watermark algorithm logic intact while routing orchestration, local model loading, and decoding policy through the shared benchmark runner.",
     },
     "sweet_runtime": {
         "method_symbol": "SWEET",
@@ -65,7 +65,7 @@ _METHOD_SPECS: dict[str, dict[str, str]] = {
         "license_status": "unverified",
         "env_root": "CODEWMBENCH_SWEET_UPSTREAM_ROOT",
         "env_manifest": "CODEWMBENCH_SWEET_UPSTREAM_MANIFEST",
-        "notes": "Pinned official SWEET checkout. Benchmark adapter imports upstream processors without modifying algorithm internals.",
+        "notes": "Pinned SWEET upstream implementation. CodeWMBench keeps the watermark algorithm logic intact while routing orchestration, local model loading, and decoding policy through the shared benchmark runner.",
     },
     "ewd_runtime": {
         "method_symbol": "EWD",
@@ -79,7 +79,7 @@ _METHOD_SPECS: dict[str, dict[str, str]] = {
         "license_status": "unverified",
         "env_root": "CODEWMBENCH_EWD_UPSTREAM_ROOT",
         "env_manifest": "CODEWMBENCH_EWD_UPSTREAM_MANIFEST",
-        "notes": "Pinned official EWD checkout. Benchmark adapter imports upstream processors without modifying algorithm internals.",
+        "notes": "Pinned EWD upstream implementation. CodeWMBench keeps the watermark algorithm logic intact while routing orchestration, local model loading, and decoding policy through the shared benchmark runner.",
     },
     "kgw_runtime": {
         "method_symbol": "KGW",
@@ -93,7 +93,7 @@ _METHOD_SPECS: dict[str, dict[str, str]] = {
         "license_status": "redistributable",
         "env_root": "CODEWMBENCH_KGW_UPSTREAM_ROOT",
         "env_manifest": "CODEWMBENCH_KGW_UPSTREAM_MANIFEST",
-        "notes": "Pinned official KGW checkout from jwkirchenbauer/lm-watermarking. Benchmark adapter imports upstream processors without modifying algorithm internals.",
+        "notes": "Pinned KGW upstream implementation from jwkirchenbauer/lm-watermarking. CodeWMBench keeps the watermark algorithm logic intact while routing orchestration, local model loading, and decoding policy through the shared benchmark runner.",
     },
 }
 _REQUIRED_FILES: dict[str, tuple[str, ...]] = {

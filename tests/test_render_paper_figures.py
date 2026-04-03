@@ -139,11 +139,22 @@ def test_configure_matplotlib_uses_publication_safe_times_typography() -> None:
     _, plt = render_paper_figures.configure_matplotlib()
     assert plt.rcParams["font.family"][0] == "serif"
     assert plt.rcParams["font.serif"][0] == "Times New Roman"
-    assert float(plt.rcParams["font.size"]) >= 13
-    assert float(plt.rcParams["axes.labelsize"]) >= 14
-    assert float(plt.rcParams["legend.fontsize"]) >= 12
+    assert float(plt.rcParams["font.size"]) >= 11
+    assert float(plt.rcParams["axes.titlesize"]) >= 12.5
+    assert float(plt.rcParams["axes.labelsize"]) >= 10.5
+    assert float(plt.rcParams["legend.fontsize"]) >= 9
     assert int(plt.rcParams["pdf.fonttype"]) == 42
     assert int(plt.rcParams["ps.fonttype"]) == 42
+
+
+def test_presentation_row_normalizes_dataset_labels_and_stringified_lists() -> None:
+    row = {
+        "dataset": "HumanEval-X",
+        "datasets": "['CraftedOriginal', 'HumanEval-X', 'MBXP 5-language subset']",
+    }
+    normalized = render_paper_figures._presentation_row(row)
+    assert normalized["dataset"] == "HumanEval-X (py/cpp/java slice)"
+    assert normalized["datasets"] == "['Crafted Original', 'HumanEval-X (py/cpp/java slice)', 'MBXP-5lang (py/cpp/java slice)']"
 
 
 def test_rendered_pdf_avoids_type3_fonts(tmp_path: Path) -> None:

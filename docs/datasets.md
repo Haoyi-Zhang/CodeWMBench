@@ -5,10 +5,10 @@
 The repository distinguishes three layers:
 
 - `data/public/`: pinned public benchmark snapshots
-- `data/compact/crafted/`: crafted benchmark snapshots used by the active public release
-- `data/compact/collections/`: the current `TOSEM-compact` evaluation slice used by the active suite manifests
+- `data/compact/crafted/`: crafted benchmark snapshots used to build the active public release
+- `data/compact/collections/`: the current `TOSEM-compact` execution slice used by the active suite manifests
 
-## Inventory
+## Inventory vs Active Execution Slice
 
 The documented suite inventory contains:
 
@@ -21,7 +21,7 @@ The documented suite inventory contains:
 - `crafted_translation`
 - `crafted_stress`
 
-The current aggregate suite score uses the following seven atomic source groups:
+The active aggregate suite score uses the following seven atomic source groups:
 
 - `HumanEval+`
 - `MBPP+`
@@ -33,23 +33,33 @@ The current aggregate suite score uses the following seven atomic source groups:
 
 `HumanEval` remains part of the documented inventory but is excluded from aggregate scoring to avoid double-counting against `HumanEval+`.
 
-## Multilingual Slice Policy
+One sentence should be read as normative across the repository:
 
-The public inventory remains five-language overall. The current official-runtime comparison slice is the common executable support set shared across the four imported baselines:
+> `HumanEval-X` and `MBXP-5lang` are five-language inventory datasets, but the active official-runtime comparison scores only the `python/cpp/java` common-support execution slice.
 
-- `python`
-- `cpp`
-- `java`
+The same interpretation applies to the active compact crafted sources: the documented crafted inventory remains five-language overall, while the active official-runtime slice executes on `python/cpp/java`.
 
-This affects the current compact execution slice for:
+## Canonical Benchmark Definition Table
 
-- `HumanEval-X`
-- `MBXP-5lang`
-- `crafted_original`
-- `crafted_translation`
-- `crafted_stress`
+The machine-readable benchmark-definition table is exported to:
 
-Whenever those datasets appear in active result figures or tables, they should be interpreted as the current `python/cpp/java` comparison slice.
+- [`results/tables/dataset_statistics/benchmark_definition_summary.csv`](../results/tables/dataset_statistics/benchmark_definition_summary.csv)
+- [`results/tables/dataset_statistics/benchmark_definition_summary.json`](../results/tables/dataset_statistics/benchmark_definition_summary.json)
+
+For quick review, the active public release can be summarized as:
+
+| Source | Inventory size | Active compact size | Scored in aggregate | Execution slice | Languages | Sampling rule | Type |
+| --- | ---: | ---: | --- | --- | --- | --- | --- |
+| `HumanEval` | `164` | `0` | `No` | inventory only | `python` | inventory only; excluded from aggregate scoring | public |
+| `HumanEval+` | `164` | `164` | `Yes` | `python` | `python` | full retained | public |
+| `MBPP+` | `378` | `240` | `Yes` | `python` | `python` | deterministic compact sample | public |
+| `HumanEval-X (5-lang inv.; py/cpp/java exec.)` | `820` | `120` | `Yes` | `python/cpp/java` | `5 inv. / 3 exec.` | deterministic common-support slice | public |
+| `MBXP-5lang (5-lang inv.; py/cpp/java exec.)` | `4693` | `120` | `Yes` | `python/cpp/java` | `5 inv. / 3 exec.` | deterministic common-support slice | public |
+| `Crafted Original` | `1500` | `120` | `Yes` | `python/cpp/java` | `5 inv. / 3 exec.` | deterministic family/category-balanced compact sample | crafted |
+| `Crafted Translation` | `1000` | `120` | `Yes` | `python/cpp/java` | `5 inv. / 3 exec.` | deterministic family/category-balanced compact sample | crafted |
+| `Crafted Stress` | `750` | `120` | `Yes` | `python/cpp/java` | `5 inv. / 3 exec.` | deterministic family/category-balanced compact sample | crafted |
+
+`compact_slice_composition` is the README-facing figure because it shows what the active release actually executes. `inventory_source_counts` is intentionally an inventory-only figure and should not be read as the scored runtime slice. Whenever a figure uses shortened multilingual labels, they always denote the active `HumanEval-X (py/cpp/java slice)` and `MBXP-5lang (py/cpp/java slice)` execution slice rather than the five-language inventories.
 
 ## Crafted Benchmarks
 
@@ -67,20 +77,6 @@ The crafted sources are **expert-informed manually curated** and then audited th
 
 This wording is intentionally factual. The repository does not claim unverifiable multi-expert authorship or review counts.
 
-## Compact Slice
-
-The active `TOSEM-compact` release keeps `HumanEval+` complete and applies deterministic compact slices elsewhere:
-
-- `HumanEval+`: `164`
-- `MBPP+`: `240`
-- `HumanEval-X (py/cpp/java slice)`: `120`
-- `MBXP-5lang (py/cpp/java slice)`: `120`
-- `Crafted Original`: `120`
-- `Crafted Translation`: `120`
-- `Crafted Stress`: `120`
-
-The compact multilingual slices are deterministic and family/category balanced instead of naive head truncation.
-
 ## Statistics Files
 
 Dataset statistics are exported under [`results/tables/dataset_statistics`](../results/tables/dataset_statistics) and [`results/figures/dataset_statistics`](../results/figures/dataset_statistics) using:
@@ -89,10 +85,19 @@ Dataset statistics are exported under [`results/tables/dataset_statistics`](../r
 python scripts/export_dataset_statistics.py
 ```
 
-These outputs summarize:
+Use the outputs with the following scope:
 
-- full inventory counts
-- compact slice counts
-- language distribution
-- task-category distribution
-- crafted family coverage
+- `compact_slice_composition`: README-facing figure for the active execution slice
+- `inventory_source_counts`: inventory-only figure for the full documented source inventory
+- `language_distribution`: compact execution-slice language coverage (`python/cpp/java`)
+- `task_category_distribution` and `dataset_task_category_breakdown`: **crafted-only** category coverage views. Here, `Other` aggregates remaining compact crafted categories outside the displayed top groups.
+- `crafted_family_coverage` and `dataset_family_breakdown`: **crafted-only** family coverage views. Here, `Other` aggregates remaining compact crafted template families outside the displayed top groups.
+
+The exported machine-readable tables include:
+
+- `dataset_inventory_summary.{csv,json}`
+- `compact_slice_summary.{csv,json}`
+- `benchmark_definition_summary.{csv,json}`
+- `dataset_language_breakdown.{csv,json}`
+- `dataset_task_category_breakdown.{csv,json}`
+- `dataset_family_breakdown.{csv,json}`

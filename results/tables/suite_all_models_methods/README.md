@@ -1,11 +1,30 @@
 # Full-Run Summary Tables
 
-This directory is the repository-tracked export target for full-run summary tables.
+This directory contains the materialized full-run summary tables tracked by the public companion repo.
 
-In a fresh public clone, this directory may contain only this README until:
+The expected public exports are split as follows.
 
-- a released raw full-run artifact is restored under `results/matrix/`, or
-- the compact full matrix is rerun locally and the table export scripts are executed.
+Paper-facing exact-value table sources:
+
+- `suite_all_models_methods_method_master_leaderboard.*`
+- `suite_all_models_methods_method_model_leaderboard.*`
+- benchmark-definition summary in `results/tables/dataset_statistics/benchmark_definition_summary.*`
+
+The aggregate leaderboard tables in this directory are source-balanced over the seven active atomic source groups; they are not raw row-weighted collapses over every generated row.
+
+Repo/supplement tables:
+
+- `method_summary.*` as a descriptive all-successful-row rollup
+- `model_summary.*`
+- `model_method_summary.*` as a descriptive model-by-method rollup
+- `method_source_summary.*`
+- `method_attack_summary.*`
+- `timing_summary.*`
+- `suite_all_models_methods_run_inventory.*`
+- `suite_all_models_methods_public_only_method_master_leaderboard.*`
+- `suite_all_models_methods_upstream_only_leaderboard.*`
+
+These remain companion-repo exact-value artifacts and should not be duplicated as paper figures unless a specific claim requires them. The raw-to-summary figure pipeline writes the exact-value leaderboard artifacts into this sibling table directory so they are not duplicated under `results/figures/suite_all_models_methods/`.
 
 Regenerate tables with:
 

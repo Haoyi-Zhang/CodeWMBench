@@ -5,5 +5,8 @@
   "license_status": "unverified",
   "checkout_root": "third_party/STONE-watermarking",
   "external_root": ".coordination/external/STONE-watermarking.gitcheckout",
-  "notes": "Pinned official STONE runtime baseline checkout. The upstream repository lacks a verified redistributable top-level license file at the pinned commit, so anonymous bundle packaging may only ship a separately verified vendored snapshot."
+  "source_relative": "stone_implementation",
+  "public_external_root": "external_checkout/STONE-watermarking",
+  "method_symbol": "STONE",
+  "notes": "Pinned STONE upstream implementation. CodeWMBench keeps the watermark algorithm logic intact while routing orchestration, local model loading, and decoding policy through the shared benchmark runner. The current license note is a distribution-policy caveat only; it does not imply that benchmark execution used a modified vendored variant."
 }

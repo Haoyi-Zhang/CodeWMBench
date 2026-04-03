@@ -1,0 +1,22 @@
+source_group,source_label,language,count
+public_humaneval_plus,HumanEval+,python,0
+public_humaneval_plus,HumanEval+,cpp,0
+public_humaneval_plus,HumanEval+,java,0
+public_mbpp_plus,MBPP+,python,240
+public_mbpp_plus,MBPP+,cpp,0
+public_mbpp_plus,MBPP+,java,0
+public_humaneval_x,HumanEval-X (py/cpp/java slice),python,40
+public_humaneval_x,HumanEval-X (py/cpp/java slice),cpp,40
+public_humaneval_x,HumanEval-X (py/cpp/java slice),java,40
+public_mbxp_5lang,MBXP-5lang (py/cpp/java slice),python,40
+public_mbxp_5lang,MBXP-5lang (py/cpp/java slice),cpp,40
+public_mbxp_5lang,MBXP-5lang (py/cpp/java slice),java,40
+crafted_original,Crafted Original,python,40
+crafted_original,Crafted Original,cpp,40
+crafted_original,Crafted Original,java,40
+crafted_translation,Crafted Translation,python,40
+crafted_translation,Crafted Translation,cpp,40
+crafted_translation,Crafted Translation,java,40
+crafted_stress,Crafted Stress,python,40
+crafted_stress,Crafted Stress,cpp,40
+crafted_stress,Crafted Stress,java,40

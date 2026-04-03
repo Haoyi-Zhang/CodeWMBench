@@ -28,6 +28,7 @@ def test_export_dataset_statistics_writes_expected_outputs(tmp_path: Path, monke
     expected_tables = {
         "dataset_inventory_summary.json",
         "compact_slice_summary.json",
+        "benchmark_definition_summary.json",
         "dataset_language_breakdown.json",
         "dataset_task_category_breakdown.json",
         "dataset_family_breakdown.json",
@@ -48,3 +49,14 @@ def test_export_dataset_statistics_writes_expected_outputs(tmp_path: Path, monke
     manifest = json.loads((table_dir / "dataset_statistics_manifest.json").read_text(encoding="utf-8"))
     assert manifest["inventory_sources"] == 8
     assert manifest["compact_sources"] == 7
+
+    benchmark_definition = json.loads((table_dir / "benchmark_definition_summary.json").read_text(encoding="utf-8"))
+    mbxp = next(row for row in benchmark_definition if row["slug"] == "mbxp_5lang")
+    assert mbxp["inventory_record_count"] == 4693
+    assert mbxp["compact_record_count"] == 120
+    assert mbxp["execution_slice"] == "python/cpp/java"
+    assert mbxp["scored_in_aggregate"] is True
+
+    task_breakdown = json.loads((table_dir / "dataset_task_category_breakdown.json").read_text(encoding="utf-8"))
+    assert task_breakdown
+    assert {row["analysis_view"] for row in task_breakdown} == {"crafted_only"}

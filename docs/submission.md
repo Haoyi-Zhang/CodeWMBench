@@ -19,7 +19,7 @@ The release bundle is intended to contain:
 - public snapshots and compact evaluation slices
 - active suite manifests
 - documentation needed to rerun the compact workflow
-- provenance manifests for the four official baselines
+- provenance manifests for the four pinned baseline implementations used in this release
 
 The bundle intentionally excludes:
 
@@ -31,7 +31,37 @@ The bundle intentionally excludes:
 
 ## Public Data And Multilingual Slice
 
-The repository-level suite inventory remains five-language overall, but the active official-runtime multilingual execution slice is `python`, `cpp`, and `java`. Whenever `HumanEval-X` or `MBXP-5lang` appear in paper-facing tables or figures, label them as the current common-support executable slice.
+The repository-level suite inventory remains five-language overall, but the active official-runtime multilingual execution slice is `python`, `cpp`, and `java`. Whenever these multilingual sources appear in paper-facing tables or figures, label them explicitly as `HumanEval-X (py/cpp/java slice)` and `MBXP-5lang (py/cpp/java slice)`.
+
+## Paper vs Companion-Repo Assets
+
+Recommended paper tables:
+
+- main leaderboard table: `suite_all_models_methods_method_master_leaderboard.*` (comparable, source-balanced method leaderboard)
+- per-model table: `suite_all_models_methods_method_model_leaderboard.*` (comparable, source-balanced per-model leaderboard)
+- benchmark-definition table: source, inventory size, compact size, execution slice, scoring status
+
+Recommended companion-repo exact-value tables (not duplicated under figures):
+
+- `method_summary.*` as a descriptive all-successful-row rollup
+- `model_summary.*`
+- `model_method_summary.*` as a descriptive model-by-method rollup
+- `method_source_summary.*`
+- `method_attack_summary.*`
+- `timing_summary.*`
+- `suite_all_models_methods_run_inventory.*`
+- `suite_all_models_methods_public_only_method_master_leaderboard.*`
+- `suite_all_models_methods_upstream_only_leaderboard.*`
+
+Recommended paper figures:
+
+- score decomposition: `suite_all_models_methods_score_decomposition.*`
+- quality vs robustness: `suite_all_models_methods_quality_vs_robustness.*`
+- generalization breakdown: `suite_all_models_methods_generalization_breakdown.*`
+- compact slice composition: `results/figures/dataset_statistics/compact_slice_composition.*`
+- evaluation-dimensions overview: `results/figures/dataset_statistics/evaluation_dimensions_overview.*`
+
+If the main paper already keeps `suite_all_models_methods_method_master_leaderboard.*` as the exact-value leaderboard table, move the visual `overall leaderboard` figure to the companion repository or supplement instead of repeating the same ranking twice in the body. Keep richer diagnostics such as per-source, per-model, per-language, attack, family, and category breakdowns in the companion repository or supplement unless the paper needs one of them for a specific claim. In this release those assets live under `results/figures/suite_all_models_methods/`, `results/figures/dataset_statistics/`, and `results/tables/suite_all_models_methods/`.
 
 ## Practical Checklist
 

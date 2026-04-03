@@ -1,9 +1,9 @@
-scope,slug,dataset_label,source_group,source_type,aggregate_score,execution_slice,record_count,language_count,languages,family_count,category_count,validation_scope,path
-inventory,human_eval,HumanEval,public_human_eval,public,False,,164,1,python,164,0,python_first,data/public/human_eval/normalized.jsonl
-inventory,humaneval_plus,HumanEval+,public_humaneval_plus,public,True,,164,1,python,164,0,python_first,data/public/humaneval_plus/normalized.jsonl
-inventory,mbpp_plus,MBPP+,public_mbpp_plus,public,True,,378,1,python,378,0,python_first,data/public/mbpp_plus/normalized.jsonl
-inventory,humaneval_x,HumanEval-X,public_humaneval_x,public,True,,820,5,"cpp,go,java,javascript,python",164,0,multilingual_exec,data/public/humaneval_x/normalized.jsonl
-inventory,mbxp_5lang,MBXP-5lang,public_mbxp_5lang,public,True,,4693,5,"cpp,go,java,javascript,python",974,0,multilingual_exec,data/public/mbxp_5lang/normalized.jsonl
-inventory,crafted_original,Crafted Original,crafted_original,crafted,True,,1500,5,"cpp,go,java,javascript,python",300,8,,data/compact/crafted/crafted_original.normalized.jsonl
-inventory,crafted_translation,Crafted Translation,crafted_translation,crafted,True,,1000,5,"cpp,go,java,javascript,python",200,5,,data/compact/crafted/crafted_translation.normalized.jsonl
-inventory,crafted_stress,Crafted Stress,crafted_stress,crafted,True,,750,5,"cpp,go,java,javascript,python",150,9,,data/compact/crafted/crafted_stress.normalized.jsonl
+scope,slug,dataset_label,source_group,source_type,aggregate_score,execution_slice,active_execution_slice,sampling_rule,scoring_status,record_count,language_count,languages,family_count,category_count,validation_scope,path
+inventory,human_eval,HumanEval,public_human_eval,public,False,,,inventory snapshot,inventory_documented,164,1,python,164,0,python_first,data/public/human_eval/normalized.jsonl
+inventory,humaneval_plus,HumanEval+,public_humaneval_plus,public,True,,,inventory snapshot,inventory_documented,164,1,python,164,0,python_first,data/public/humaneval_plus/normalized.jsonl
+inventory,mbpp_plus,MBPP+,public_mbpp_plus,public,True,,,inventory snapshot,inventory_documented,378,1,python,378,0,python_first,data/public/mbpp_plus/normalized.jsonl
+inventory,humaneval_x,HumanEval-X,public_humaneval_x,public,True,,,inventory snapshot,inventory_documented,820,5,"cpp,go,java,javascript,python",164,0,multilingual_exec,data/public/humaneval_x/normalized.jsonl
+inventory,mbxp_5lang,MBXP-5lang,public_mbxp_5lang,public,True,,,inventory snapshot,inventory_documented,4693,5,"cpp,go,java,javascript,python",974,0,multilingual_exec,data/public/mbxp_5lang/normalized.jsonl
+inventory,crafted_original,Crafted Original,crafted_original,crafted,True,,,inventory snapshot,inventory_documented,1500,5,"cpp,go,java,javascript,python",300,8,,data/compact/crafted/crafted_original.normalized.jsonl
+inventory,crafted_translation,Crafted Translation,crafted_translation,crafted,True,,,inventory snapshot,inventory_documented,1000,5,"cpp,go,java,javascript,python",200,5,,data/compact/crafted/crafted_translation.normalized.jsonl
+inventory,crafted_stress,Crafted Stress,crafted_stress,crafted,True,,,inventory snapshot,inventory_documented,750,5,"cpp,go,java,javascript,python",150,9,,data/compact/crafted/crafted_stress.normalized.jsonl

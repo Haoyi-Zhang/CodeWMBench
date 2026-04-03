@@ -1,0 +1,30 @@
+[
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "cross_model_stability": 0.9444,
+    "cross_source_stability": 0.8476,
+    "cross_task_stability": 0.7881
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "cross_model_stability": 0.9306,
+    "cross_source_stability": 0.7276,
+    "cross_task_stability": 0.8415
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "cross_model_stability": 0.9532,
+    "cross_source_stability": 0.7976,
+    "cross_task_stability": 0.7871
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "cross_model_stability": 0.9425,
+    "cross_source_stability": 0.8883,
+    "cross_task_stability": 0.8001
+  }
+]

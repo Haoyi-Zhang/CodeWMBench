@@ -1,0 +1,5 @@
+method,paper_label,generalization,cross_model_stability,cross_source_stability,cross_task_stability
+sweet_runtime,SWEET,0.877,0.9425,0.8883,0.8001
+stone_runtime,STONE,0.86,0.9444,0.8476,0.7881
+kgw_runtime,KGW-RT,0.846,0.9532,0.7976,0.7871
+ewd_runtime,EWD,0.8332,0.9306,0.7276,0.8415

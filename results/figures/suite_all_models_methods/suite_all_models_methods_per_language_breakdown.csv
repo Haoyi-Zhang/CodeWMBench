@@ -1,0 +1,13 @@
+method,paper_label,language,utility,row_count
+ewd_runtime,EWD,python,0.7696,3864
+ewd_runtime,EWD,cpp,0.4187,5600
+ewd_runtime,EWD,java,0.4205,5600
+kgw_runtime,KGW-RT,python,0.7697,3864
+kgw_runtime,KGW-RT,cpp,0.419,5600
+kgw_runtime,KGW-RT,java,0.4198,5600
+stone_runtime,STONE,python,0.7702,3864
+stone_runtime,STONE,cpp,0.1684,5600
+stone_runtime,STONE,java,0.7709,5600
+sweet_runtime,SWEET,python,0.4187,3864
+sweet_runtime,SWEET,cpp,0.4188,5600
+sweet_runtime,SWEET,java,0.4205,5600

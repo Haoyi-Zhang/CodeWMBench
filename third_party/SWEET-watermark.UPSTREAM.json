@@ -8,5 +8,5 @@
   "source_relative": ".",
   "public_external_root": "external_checkout/sweet-watermark",
   "method_symbol": "SWEET",
-  "notes": "Pinned official SWEET source. The benchmark adapter imports upstream processors without modifying algorithm internals."
+  "notes": "Pinned SWEET upstream implementation. CodeWMBench keeps the watermark algorithm logic intact while routing orchestration, local model loading, and decoding policy through the shared benchmark runner."
 }

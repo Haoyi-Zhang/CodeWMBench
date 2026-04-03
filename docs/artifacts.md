@@ -1,19 +1,26 @@
 # Artifacts And Large Result Files
 
+This is the canonical artifact-status document for the public repository.
+
+Status in the current GitHub snapshot:
+
+- raw full-run results are **not** stored in git
+- the archival raw-results artifact metadata has **not** been filled into this repository snapshot yet
+- the repository-tracked full-run summary figures/tables are materialized in this snapshot
+- Level 2 regeneration remains a documented path, but it is not immediately executable until the external raw artifact is published
+
 The public GitHub repository is intentionally lightweight:
 
 - code
 - pinned public benchmark snapshots
 - active compact collections
 - documentation
-- summary figures and tables
+- repository-tracked dataset statistics figures and tables
 - light result inventories and manifests
 
 Large raw full-run outputs are **not** stored in git.
 
-The public GitHub repository alone is therefore sufficient for code inspection, dataset statistics, formulas, and compact benchmark definitions, but **not** for reconstructing the raw `112/112 success` full-run result tree until an external raw artifact is published or restored locally.
-
-Until a Zenodo record is minted or a local rerun is restored, the public repository may only contain placeholder README files in the final full-run summary export directories. That is expected: the repository tracks the export targets, not the raw per-run result tree.
+The public GitHub repository alone is therefore sufficient for code inspection, dataset statistics, formulas, compact benchmark definitions, and the materialized full-run summary figures/tables, but **not** for reconstructing the raw `112/112 success` full-run result tree until an external raw artifact is published or restored locally.
 
 ## What Stays Out Of Git
 
@@ -52,9 +59,15 @@ For public release, publish:
 - a raw artifact manifest
 - a checksum file
 - the exact model identifiers used
-- the exact upstream provenance manifests used for the four official baselines
+- the exact upstream provenance manifests used for the four pinned baseline implementations in this release
 
 Before a DOI is minted, the repository only carries templates for the first two files. Replace the `TBD` fields with the actual Zenodo metadata before citing the public artifact in a paper or GitHub release. Until then, Level 2 reproduction should be understood as a documented regeneration path rather than a self-contained raw-results download from this repository alone.
+
+In other words:
+
+- GitHub guarantees code, compact inputs, docs, dataset statistics, and the repository-tracked full-run summary exports in this snapshot
+- GitHub does **not** guarantee the raw full-run matrix tree needed to regenerate those exports from scratch
+- Zenodo (or an equivalent external artifact host) is the canonical home for the raw full-run result tree
 
 Repository templates for the first two files live under:
 

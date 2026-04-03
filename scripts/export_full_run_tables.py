@@ -26,6 +26,15 @@ from codewmbench.suite import normalize_source_group
 
 _BENCHMARK_ROW_FIELDS = {field.name for field in fields(BenchmarkRow)}
 
+_PRESENTATION_DATASET_LABELS = {
+    "CraftedOriginal": "Crafted Original",
+    "CraftedTranslation": "Crafted Translation",
+    "CraftedStress": "Crafted Stress",
+    "HumanEval-X": "HumanEval-X (py/cpp/java slice)",
+    "MBXP 5-language subset": "MBXP-5lang (py/cpp/java slice)",
+    "MBXP-5lang": "MBXP-5lang (py/cpp/java slice)",
+}
+
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Export full-run aggregate tables from existing report.json files.")
@@ -62,9 +71,39 @@ def _write_rows_json(path: Path, rows: list[dict[str, Any]]) -> None:
     path.write_text(json.dumps(rows, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def _presentation_text(value: str) -> str:
+    normalized = str(value)
+    for raw, pretty in _PRESENTATION_DATASET_LABELS.items():
+        if raw == pretty:
+            continue
+        if pretty in normalized:
+            continue
+        normalized = normalized.replace(raw, pretty)
+    return normalized
+
+
+def _presentation_dataset_label(value: Any) -> Any:
+    raw = str(value).strip()
+    if not raw:
+        return value
+    return _PRESENTATION_DATASET_LABELS.get(raw, _presentation_text(raw))
+
+
+def _presentation_row(row: dict[str, Any]) -> dict[str, Any]:
+    normalized = dict(row)
+    if isinstance(normalized.get("datasets"), list):
+        normalized["datasets"] = [_presentation_dataset_label(value) for value in normalized["datasets"]]
+    elif isinstance(normalized.get("datasets"), str):
+        normalized["datasets"] = _presentation_text(normalized["datasets"])
+    if isinstance(normalized.get("dataset"), str):
+        normalized["dataset"] = _presentation_dataset_label(normalized["dataset"])
+    return normalized
+
+
 def _write_table(output_dir: Path, stem: str, rows: list[dict[str, Any]]) -> None:
-    _write_rows_json(output_dir / f"{stem}.json", rows)
-    _write_rows_csv(output_dir / f"{stem}.csv", rows)
+    normalized_rows = [_presentation_row(row) for row in rows]
+    _write_rows_json(output_dir / f"{stem}.json", normalized_rows)
+    _write_rows_csv(output_dir / f"{stem}.csv", normalized_rows)
 
 
 def _run_duration_seconds(run: Mapping[str, Any]) -> float:

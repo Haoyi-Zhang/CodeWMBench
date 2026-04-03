@@ -1,0 +1,86 @@
+[
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "language": "python",
+    "utility": 0.7696,
+    "row_count": 3864
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "language": "cpp",
+    "utility": 0.4187,
+    "row_count": 5600
+  },
+  {
+    "method": "ewd_runtime",
+    "paper_label": "EWD",
+    "language": "java",
+    "utility": 0.4205,
+    "row_count": 5600
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "language": "python",
+    "utility": 0.7697,
+    "row_count": 3864
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "language": "cpp",
+    "utility": 0.419,
+    "row_count": 5600
+  },
+  {
+    "method": "kgw_runtime",
+    "paper_label": "KGW-RT",
+    "language": "java",
+    "utility": 0.4198,
+    "row_count": 5600
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "language": "python",
+    "utility": 0.7702,
+    "row_count": 3864
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "language": "cpp",
+    "utility": 0.1684,
+    "row_count": 5600
+  },
+  {
+    "method": "stone_runtime",
+    "paper_label": "STONE",
+    "language": "java",
+    "utility": 0.7709,
+    "row_count": 5600
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "language": "python",
+    "utility": 0.4187,
+    "row_count": 3864
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "language": "cpp",
+    "utility": 0.4188,
+    "row_count": 5600
+  },
+  {
+    "method": "sweet_runtime",
+    "paper_label": "SWEET",
+    "language": "java",
+    "utility": 0.4205,
+    "row_count": 5600
+  }
+]
