@@ -27,6 +27,6 @@ Abbreviation notes used by the figures:
 - `Orig. (active)` / `Trans. (active)` / `Stress (active)` denote the three crafted compact execution slices
 - `Orig. (inv.)` / `Trans. (inv.)` / `Stress (inv.)` denote the crafted inventory counts
 - `Other` in crafted-only category/family views aggregates the remaining compact crafted groups outside the displayed top buckets
-- In `evaluation_dimensions_overview`, `Pass retention` denotes watermarked pass preservation, `1 - FPR` denotes one minus the negative-control false-positive rate, and `Support` denotes negative-control support coverage
+- In `evaluation_dimensions_overview`, `Pass retention` denotes watermarked pass preservation, `1 - neg. FPR` denotes one minus the negative-control false-positive rate, and `Neg. support` denotes negative-control support coverage
 
 See [`docs/datasets.md`](../../../docs/datasets.md) for the corresponding table-level definitions and scope notes.

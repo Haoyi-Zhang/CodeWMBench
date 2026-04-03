@@ -700,8 +700,8 @@ def _evaluation_dimensions_overview_figure(plt: Any, output_root: Path) -> None:
     ]
     gate_leaves = [
         (0.62, 0.36, "Pass\nretention"),
-        (0.82, 0.36, "1 - FPR"),
-        (0.98, 0.36, "Support"),
+        (0.82, 0.36, "1 - neg.\nFPR"),
+        (0.98, 0.36, "Neg.\nsupport"),
     ]
 
     _tree_label(*root, "CodeWMScore", size=10.8, weight="semibold")
