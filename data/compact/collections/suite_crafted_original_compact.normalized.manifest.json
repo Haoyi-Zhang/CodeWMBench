@@ -1,0 +1,219 @@
+{
+  "benchmark": "crafted_original",
+  "canonical_reference_count": 120,
+  "category_counts": {
+    "class/object interaction": 15,
+    "data structures": 15,
+    "exception/error handling": 15,
+    "graph/search": 15,
+    "numeric/boundary conditions": 15,
+    "recursion/dp": 15,
+    "state machines/simulation": 15,
+    "strings/parsing": 15
+  },
+  "claimed_languages": [
+    "python",
+    "cpp",
+    "java"
+  ],
+  "collection_name": "suite_crafted_original_compact",
+  "coverage": {
+    "claimed_language_count": 3,
+    "clean_reference_compile_rate": null,
+    "clean_reference_pass_rate": null,
+    "declared_semantic_validation_language_rate": 1.0,
+    "declared_semantic_validation_rate": 1.0,
+    "declared_unvalidated_languages": [],
+    "missing_claimed_languages": [],
+    "observed_coverage_rate": 1.0,
+    "observed_language_count": 3,
+    "runtime_semantic_validation_language_rate": null,
+    "runtime_semantic_validation_rate": null,
+    "runtime_unvalidated_languages": [],
+    "runtime_validation_annotations_available": false,
+    "runtime_validation_basis": "unavailable",
+    "semantic_validation_language_rate": null,
+    "semantic_validation_rate": null,
+    "unvalidated_languages": []
+  },
+  "dataset_label": "Crafted Original",
+  "datasets": [
+    "CraftedOriginal"
+  ],
+  "difficulty_counts": {
+    "easy": 24,
+    "hard": 48,
+    "medium": 48
+  },
+  "family_count": 40,
+  "family_counts": {
+    "crafted_original_000": 3,
+    "crafted_original_001": 3,
+    "crafted_original_002": 3,
+    "crafted_original_003": 3,
+    "crafted_original_004": 3,
+    "crafted_original_005": 3,
+    "crafted_original_006": 3,
+    "crafted_original_007": 3,
+    "crafted_original_090": 3,
+    "crafted_original_091": 3,
+    "crafted_original_092": 3,
+    "crafted_original_093": 3,
+    "crafted_original_094": 3,
+    "crafted_original_095": 3,
+    "crafted_original_096": 3,
+    "crafted_original_097": 3,
+    "crafted_original_098": 3,
+    "crafted_original_099": 3,
+    "crafted_original_100": 3,
+    "crafted_original_101": 3,
+    "crafted_original_102": 3,
+    "crafted_original_103": 3,
+    "crafted_original_104": 3,
+    "crafted_original_105": 3,
+    "crafted_original_240": 3,
+    "crafted_original_241": 3,
+    "crafted_original_242": 3,
+    "crafted_original_243": 3,
+    "crafted_original_244": 3,
+    "crafted_original_245": 3,
+    "crafted_original_246": 3,
+    "crafted_original_247": 3,
+    "crafted_original_248": 3,
+    "crafted_original_249": 3,
+    "crafted_original_250": 3,
+    "crafted_original_251": 3,
+    "crafted_original_252": 3,
+    "crafted_original_253": 3,
+    "crafted_original_254": 3,
+    "crafted_original_255": 3
+  },
+  "include_difficulties": [
+    "easy",
+    "hard",
+    "medium"
+  ],
+  "include_languages": [
+    "python",
+    "cpp",
+    "java"
+  ],
+  "include_origin_types": [
+    "crafted_original"
+  ],
+  "include_reference_kinds": [
+    "canonical"
+  ],
+  "include_source_groups": [
+    "crafted_original"
+  ],
+  "input_filtered_counts": {
+    "data/compact/crafted/crafted_original.normalized.jsonl": 900
+  },
+  "inputs": [
+    "data/compact/crafted/crafted_original.normalized.jsonl"
+  ],
+  "language_counts": {
+    "cpp": 40,
+    "java": 40,
+    "python": 40
+  },
+  "observed_languages": [
+    "cpp",
+    "java",
+    "python"
+  ],
+  "origin_type_counts": {
+    "crafted_original": 120
+  },
+  "quota_per_language": {
+    "cpp": 40,
+    "java": 40,
+    "python": 40
+  },
+  "quota_per_source_group": {},
+  "record_count": 120,
+  "reference_kind_counts": {
+    "canonical": 120
+  },
+  "reference_kind_total": 120,
+  "sample_ids_path": "data/compact/collections/suite_crafted_original_compact.normalized.sample_ids.json",
+  "schema_version": 1,
+  "smoke_overlay_reference_count": 0,
+  "source_group_counts": {
+    "crafted_original": 120
+  },
+  "source_manifests": [
+    {
+      "benchmark": "crafted_original",
+      "category_counts": {
+        "class/object interaction": 37,
+        "data structures": 38,
+        "exception/error handling": 37,
+        "graph/search": 37,
+        "numeric/boundary conditions": 38,
+        "recursion/dp": 38,
+        "state machines/simulation": 37,
+        "strings/parsing": 38
+      },
+      "dataset_label": "CraftedOriginal",
+      "family_count": 300,
+      "languages": [
+        "python",
+        "cpp",
+        "java",
+        "javascript",
+        "go"
+      ],
+      "origin_type": "crafted_original",
+      "source_group": "crafted_original",
+      "task_count": 1500,
+      "task_count_per_family": 5,
+      "template_family_counts": {
+        "API-style normalization": 50,
+        "arrays/lists": 38,
+        "dp/recursion": 38,
+        "graph/search": 37,
+        "maps/sets": 12,
+        "math/bit ops": 38,
+        "parsing": 50,
+        "stateful update": 37
+      }
+    }
+  ],
+  "suite_selection_policy": {
+    "common_support_languages": [
+      "python",
+      "cpp",
+      "java"
+    ],
+    "languages": [
+      "python",
+      "cpp",
+      "java"
+    ],
+    "strata": [
+      "category",
+      "difficulty"
+    ],
+    "target_family_count": 40,
+    "target_record_count": 120,
+    "type": "category_balanced_multilingual_compact_slice"
+  },
+  "task_count": 120,
+  "template_family_counts": {
+    "api-style normalization": 24,
+    "arrays/lists": 15,
+    "dp/recursion": 15,
+    "graph/search": 15,
+    "maps/sets": 3,
+    "math/bit ops": 15,
+    "parsing": 18,
+    "stateful update": 15
+  },
+  "validation_supported_languages": [
+    "cpp",
+    "java",
+    "python"
+  ]
+}

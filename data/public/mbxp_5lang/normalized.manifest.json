@@ -1,0 +1,184 @@
+{
+  "adapter_name": "mbxp-5lang",
+  "artifact_policy": "allowed",
+  "benchmark": "mbxp_5lang",
+  "canonical_reference_count": 3559,
+  "canonical_reference_rate": 0.7584,
+  "counts": {
+    "expected": 4693,
+    "observed": 4693
+  },
+  "dataset_label": "MBXP 5-language subset",
+  "datasets": [
+    "MBXP 5-language subset"
+  ],
+  "difficulty_counts": {
+    "easy": 752,
+    "hard": 2288,
+    "medium": 1653
+  },
+  "expected_task_count": 4693,
+  "extraction_rules": [
+    "data/mbxp/mbpp_release_v1.jsonl",
+    "data/mbxp/mbcpp_release_v1.2.jsonl",
+    "data/mbxp/mbjp_release_v1.2.jsonl",
+    "data/mbxp/mbjsp_release_v1.2.jsonl",
+    "data/mbxp/mbgp_release_v1.1.jsonl",
+    "data/mbxp/examples/mbcpp_samples.jsonl",
+    "data/mbxp/examples/mbcsp_samples.jsonl",
+    "data/mbxp/examples/mbgp_samples.jsonl",
+    "data/mbxp/examples/mbjp_samples.jsonl",
+    "data/mbxp/examples/mbjsp_samples.jsonl",
+    "data/mbxp/examples/mbkp_samples.jsonl",
+    "data/mbxp/examples/mbphp_samples.jsonl",
+    "data/mbxp/examples/mbplp_samples.jsonl",
+    "data/mbxp/examples/mbpp_samples.jsonl",
+    "data/mbxp/examples/mbrbp_samples.jsonl",
+    "data/mbxp/examples/mbscp_samples.jsonl",
+    "data/mbxp/examples/mbswp_samples.jsonl",
+    "data/mbxp/examples/mbtsp_samples.jsonl"
+  ],
+  "included_in_core": true,
+  "license_note": "Apache-2.0; MXEval MBXP release",
+  "normalized_path": "data/public/mbxp_5lang/normalized.jsonl",
+  "notes": "Extracted from the official MXEval repository at a pinned commit using the five MBXP language files plus example overlays.",
+  "observed_languages": [
+    "cpp",
+    "go",
+    "java",
+    "javascript",
+    "python"
+  ],
+  "origin_type_counts": {
+    "public": 4693
+  },
+  "reference_kind_counts": {
+    "canonical": 3559,
+    "smoke_overlay": 1134
+  },
+  "reference_kind_total": 4693,
+  "sample_ids_path": "data/public/mbxp_5lang/normalized.sample_ids.json",
+  "schema_version": 2,
+  "smoke_overlay_reference_count": 1134,
+  "source_archive_sha256": "ea6a4b37b530c6965bbbba7bc697b0aedb1d369cf295cbe5afb6d3cac002612b",
+  "source_group": "public_mbxp_5lang",
+  "source_group_counts": {
+    "public_mbxp_5lang": 4693
+  },
+  "source_manifests": [
+    {
+      "benchmark": "mbxp_5lang",
+      "dataset_label": "MBXP 5-language subset",
+      "language": "python",
+      "license_note": "Apache-2.0; MXEval MBXP release",
+      "sample_task_ids": [
+        "MBPP/1",
+        "MBPP/2",
+        "MBPP/3",
+        "MBPP/974"
+      ],
+      "source_group": "public_mbxp_5lang",
+      "source_path": "mbpp_release_v1.jsonl",
+      "source_revision": "e09974f990eeaf0c0e8f2b5eaff4be66effb2c86",
+      "source_sha256": "fd4cbc0421f3c487e85bab591ec69092740fbfc1e8d16b147db33005921955f3",
+      "source_url": "https://github.com/amazon-science/mxeval",
+      "split": "test",
+      "task_count": 974,
+      "task_id_digest": "400b8df496f3443b889a2a30f3529820afea353b7a44b7b51b3aca27282f5b34"
+    },
+    {
+      "benchmark": "mbxp_5lang",
+      "dataset_label": "MBXP 5-language subset",
+      "language": "cpp",
+      "license_note": "Apache-2.0; MXEval MBXP release",
+      "sample_task_ids": [
+        "MBCPP/1",
+        "MBCPP/2",
+        "MBCPP/3",
+        "MBCPP/974"
+      ],
+      "source_group": "public_mbxp_5lang",
+      "source_path": "mbcpp_release_v1.2.jsonl",
+      "source_revision": "e09974f990eeaf0c0e8f2b5eaff4be66effb2c86",
+      "source_sha256": "bba79fefe1963b34e4db39409fe3e59d12bc37b86c1906b86e043feec3589b72",
+      "source_url": "https://github.com/amazon-science/mxeval",
+      "split": "test",
+      "task_count": 848,
+      "task_id_digest": "3ff377d063ff3dd0343576209c2e2b7f8f0170e705ee81c08701066b6d5d753a"
+    },
+    {
+      "benchmark": "mbxp_5lang",
+      "dataset_label": "MBXP 5-language subset",
+      "language": "java",
+      "license_note": "Apache-2.0; MXEval MBXP release",
+      "sample_task_ids": [
+        "MBJP/1",
+        "MBJP/2",
+        "MBJP/3",
+        "MBJP/974"
+      ],
+      "source_group": "public_mbxp_5lang",
+      "source_path": "mbjp_release_v1.2.jsonl",
+      "source_revision": "e09974f990eeaf0c0e8f2b5eaff4be66effb2c86",
+      "source_sha256": "534cd0fecaed50a51860f6a74abb433b8e22f2a77d3cd77a43a8c581242a7737",
+      "source_url": "https://github.com/amazon-science/mxeval",
+      "split": "test",
+      "task_count": 966,
+      "task_id_digest": "45f50bc1bb99aecb9272319c4f4d8bc0d99b510b3f6b53dd4327815e940fa887"
+    },
+    {
+      "benchmark": "mbxp_5lang",
+      "dataset_label": "MBXP 5-language subset",
+      "language": "javascript",
+      "license_note": "Apache-2.0; MXEval MBXP release",
+      "sample_task_ids": [
+        "MBJSP/1",
+        "MBJSP/2",
+        "MBJSP/3",
+        "MBJSP/974"
+      ],
+      "source_group": "public_mbxp_5lang",
+      "source_path": "mbjsp_release_v1.2.jsonl",
+      "source_revision": "e09974f990eeaf0c0e8f2b5eaff4be66effb2c86",
+      "source_sha256": "172fc0f7d816e5d94b64d3b53ce74b98dc0ddbf640baa7dc6551a59c9c4b5ee6",
+      "source_url": "https://github.com/amazon-science/mxeval",
+      "split": "test",
+      "task_count": 966,
+      "task_id_digest": "376d72b6893b0e5ef02fea8a74423ad09ac76dce78023f2ec8b37b76654ba693"
+    },
+    {
+      "benchmark": "mbxp_5lang",
+      "dataset_label": "MBXP 5-language subset",
+      "language": "go",
+      "license_note": "Apache-2.0; MXEval MBXP release",
+      "sample_task_ids": [
+        "MBGP/1",
+        "MBGP/2",
+        "MBGP/3",
+        "MBGP/974"
+      ],
+      "source_group": "public_mbxp_5lang",
+      "source_path": "mbgp_release_v1.1.jsonl",
+      "source_revision": "e09974f990eeaf0c0e8f2b5eaff4be66effb2c86",
+      "source_sha256": "ea41ec934893d865ec39f79880a4e62c73c235fdd2f015c81e1fe9064f7abf9b",
+      "source_url": "https://github.com/amazon-science/mxeval",
+      "split": "test",
+      "task_count": 939,
+      "task_id_digest": "607972f17a059b1305161d377a77426703fcd73577d9cf20fc2b054c9db41b1e"
+    }
+  ],
+  "source_path": "amazon-science-mxeval-e09974f990ee",
+  "source_revision": "e09974f990eeaf0c0e8f2b5eaff4be66effb2c86",
+  "source_url": "https://github.com/amazon-science/mxeval",
+  "split": "test",
+  "task_count": 4693,
+  "validation_policy": "validated_python_rows",
+  "validation_scope": "multilingual_exec",
+  "validation_supported_languages": [
+    "cpp",
+    "go",
+    "java",
+    "javascript",
+    "python"
+  ]
+}

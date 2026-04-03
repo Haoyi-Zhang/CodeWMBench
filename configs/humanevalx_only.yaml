@@ -1,0 +1,17 @@
+{
+  "project": {"name": "codewmbench-humanevalx-only", "artifact_mode": "anonymous", "seed": 2055},
+  "paths": {"prepared_benchmark": "data/compact/collections/suite_humanevalx_compact.normalized.jsonl", "results_root": "results/runs"},
+  "benchmark": {
+    "collection_name": "suite_humanevalx_compact",
+    "prepared_output": "data/compact/collections/suite_humanevalx_compact.normalized.jsonl",
+    "validation_scope": "multilingual_exec",
+    "include_reference_kinds": ["canonical"],
+    "languages": ["python", "cpp", "java"],
+    "source": "data/compact/collections/suite_humanevalx_compact.normalized.jsonl",
+    "source_group": "public_humaneval_x"
+  },
+  "provider": {"mode": "offline_mock", "parameters": {}},
+  "watermark": {"scheme": "kgw", "strength": 0.55},
+  "attacks": {"include": ["comment_strip", "identifier_rename", "whitespace_normalize", "control_flow_flatten", "budgeted_adaptive"]},
+  "reporting": {"clean_samples_per_task": 20, "pass_threshold": 0.72}
+}

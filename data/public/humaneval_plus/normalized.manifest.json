@@ -1,0 +1,61 @@
+{
+  "adapter_name": "human-eval-plus",
+  "artifact_policy": "allowed",
+  "benchmark": "humaneval_plus",
+  "canonical_reference_rate": 1.0,
+  "counts": {
+    "expected": 164,
+    "observed": 164
+  },
+  "dataset_label": "HumanEval+",
+  "datasets": [
+    "HumanEval+"
+  ],
+  "difficulty_counts": {
+    "easy": 52,
+    "hard": 22,
+    "medium": 90
+  },
+  "expected_task_count": 164,
+  "extraction_rules": [],
+  "included_in_core": true,
+  "license_note": "Apache-2.0; EvalPlus HumanEval+ release",
+  "normalized_path": "data/public/humaneval_plus/normalized.jsonl",
+  "notes": "",
+  "observed_languages": [
+    "python"
+  ],
+  "origin_type_counts": {
+    "public": 164
+  },
+  "reference_kind_counts": {
+    "canonical": 164
+  },
+  "sample_ids_path": "data/public/humaneval_plus/normalized.sample_ids.json",
+  "schema_version": 2,
+  "source_archive_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+  "source_group": "public_humaneval_plus",
+  "source_group_counts": {
+    "public_humaneval_plus": 164
+  },
+  "source_manifests": [
+    {
+      "record_count": 164,
+      "source_archive_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+      "source_path": "humaneval_plus.source.jsonl.gz",
+      "source_revision": "200defce9e3429d28ca215b6dd061c0f7f31c18b",
+      "source_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+      "source_url": "https://raw.githubusercontent.com/evalplus/humanevalplus_release/200defce9e3429d28ca215b6dd061c0f7f31c18b/HumanEvalPlus.jsonl.gz"
+    }
+  ],
+  "source_path": "humaneval_plus.source.jsonl.gz",
+  "source_revision": "200defce9e3429d28ca215b6dd061c0f7f31c18b",
+  "source_url": "https://raw.githubusercontent.com/evalplus/humanevalplus_release/200defce9e3429d28ca215b6dd061c0f7f31c18b/HumanEvalPlus.jsonl.gz",
+  "split": "test",
+  "task_count": 164,
+  "validation_policy": "validated_python_rows",
+  "validation_scope": "python_first",
+  "validation_supported_languages": [
+    "python"
+  ]
+}

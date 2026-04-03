@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "repo_url": "https://github.com/luyijian3/EWD.git",
+  "pinned_commit": "605756acf802528a3df89d95a4661a031eafc79b",
+  "license_status": "unverified",
+  "checkout_root": "third_party/EWD",
+  "external_root": ".coordination/external/EWD.gitcheckout",
+  "source_relative": ".",
+  "public_external_root": "external_checkout/EWD",
+  "method_symbol": "EWD",
+  "notes": "Pinned official EWD source. The benchmark adapter imports upstream processors without modifying algorithm internals."
+}

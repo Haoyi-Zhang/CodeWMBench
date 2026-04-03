@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "repo_url": "https://github.com/inistory/STONE-watermarking.git",
+  "pinned_commit": "bb5d809c0c494a219411e861f2313cca2b9fd7b4",
+  "license_status": "unverified",
+  "checkout_root": "third_party/STONE-watermarking",
+  "external_root": ".coordination/external/STONE-watermarking.gitcheckout",
+  "notes": "Pinned official STONE runtime baseline checkout. The upstream repository lacks a verified redistributable top-level license file at the pinned commit, so anonymous bundle packaging may only ship a separately verified vendored snapshot."
+}

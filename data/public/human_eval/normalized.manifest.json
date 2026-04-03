@@ -1,0 +1,61 @@
+{
+  "adapter_name": "human-eval",
+  "artifact_policy": "allowed",
+  "benchmark": "human_eval",
+  "canonical_reference_rate": 1.0,
+  "counts": {
+    "expected": 164,
+    "observed": 164
+  },
+  "dataset_label": "HumanEval",
+  "datasets": [
+    "HumanEval"
+  ],
+  "difficulty_counts": {
+    "easy": 52,
+    "hard": 22,
+    "medium": 90
+  },
+  "expected_task_count": 164,
+  "extraction_rules": [],
+  "included_in_core": true,
+  "license_note": "MIT; original HumanEval repository",
+  "normalized_path": "data/public/human_eval/normalized.jsonl",
+  "notes": "",
+  "observed_languages": [
+    "python"
+  ],
+  "origin_type_counts": {
+    "public": 164
+  },
+  "reference_kind_counts": {
+    "canonical": 164
+  },
+  "sample_ids_path": "data/public/human_eval/normalized.sample_ids.json",
+  "schema_version": 2,
+  "source_archive_sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+  "source_group": "public_human_eval",
+  "source_group_counts": {
+    "public_human_eval": 164
+  },
+  "source_manifests": [
+    {
+      "record_count": 164,
+      "source_archive_sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+      "source_path": "human_eval.source.jsonl.gz",
+      "source_revision": "6d43fb980f9fee3c892a914eda09951f772ad10d",
+      "source_sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+      "source_url": "https://raw.githubusercontent.com/openai/human-eval/6d43fb980f9fee3c892a914eda09951f772ad10d/data/HumanEval.jsonl.gz"
+    }
+  ],
+  "source_path": "human_eval.source.jsonl.gz",
+  "source_revision": "6d43fb980f9fee3c892a914eda09951f772ad10d",
+  "source_url": "https://raw.githubusercontent.com/openai/human-eval/6d43fb980f9fee3c892a914eda09951f772ad10d/data/HumanEval.jsonl.gz",
+  "split": "test",
+  "task_count": 164,
+  "validation_policy": "validated_python_rows",
+  "validation_scope": "python_first",
+  "validation_supported_languages": [
+    "python"
+  ]
+}

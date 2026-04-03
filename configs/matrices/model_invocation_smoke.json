@@ -1,0 +1,1201 @@
+{
+  "schema_version": 1,
+  "profile": "model_invocation_smoke",
+  "description": "Stage B smoke precheck: remaining three backbones across HumanEval+ and compact MBPP+ with bounded sample counts.",
+  "fairness_rule": "For each local model backbone, compare all four official imported baselines on the same executable benchmark rows; cross-model execution may run in parallel but aggregation remains model-conditioned.",
+  "model_roster": [
+    "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "bigcode/starcoder2-7b",
+    "deepseek-ai/deepseek-coder-6.7b-instruct"
+  ],
+  "benchmark_roster": [
+    "HumanEval+",
+    "MBPP+"
+  ],
+  "atomic_benchmark_sources": [
+    "humaneval_plus",
+    "mbpp_plus"
+  ],
+  "suite_inventory_datasets": [
+    "HumanEval",
+    "HumanEval+",
+    "MBPP+",
+    "HumanEval-X (py/cpp/java slice)",
+    "MBXP-5lang (py/cpp/java slice)",
+    "Crafted Original",
+    "Crafted Translation",
+    "Crafted Stress"
+  ],
+  "method_roster": [
+    "stone_runtime",
+    "sweet_runtime",
+    "ewd_runtime",
+    "kgw_runtime"
+  ],
+  "required_watermark_methods": [
+    "stone_runtime",
+    "sweet_runtime",
+    "ewd_runtime",
+    "kgw_runtime"
+  ],
+  "required_provider_modes": [
+    "offline_mock"
+  ],
+  "required_gpu_pools": [
+    "runtime"
+  ],
+  "runs": [
+    {
+      "run_id": "stage_b_qwen25_7b_heplus_stone_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_stone_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-stone_runtime-qwen25_7b-heplus",
+          "seed": 240779
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 2010100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "qwen25_7b",
+        "heplus",
+        "stone_runtime",
+        "stone_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_qwen25_7b_heplus_sweet_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_sweet_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-sweet_runtime-qwen25_7b-heplus",
+          "seed": 240779
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 2020100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "qwen25_7b",
+        "heplus",
+        "sweet_runtime",
+        "sweet_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_qwen25_7b_heplus_ewd_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_ewd_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-ewd_runtime-qwen25_7b-heplus",
+          "seed": 240779
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 2040100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "qwen25_7b",
+        "heplus",
+        "ewd_runtime",
+        "ewd_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_qwen25_7b_heplus_kgw_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_kgw_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-kgw_runtime-qwen25_7b-heplus",
+          "seed": 240779
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 2030100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "qwen25_7b",
+        "heplus",
+        "kgw_runtime",
+        "kgw_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_qwen25_7b_mbppplus_stone_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_stone_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-stone_runtime-qwen25_7b-mbppplus",
+          "seed": 172569
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 2010200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "qwen25_7b",
+        "mbppplus",
+        "stone_runtime",
+        "stone_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_qwen25_7b_mbppplus_sweet_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_sweet_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-sweet_runtime-qwen25_7b-mbppplus",
+          "seed": 172569
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 2020200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "qwen25_7b",
+        "mbppplus",
+        "sweet_runtime",
+        "sweet_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_qwen25_7b_mbppplus_ewd_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_ewd_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-ewd_runtime-qwen25_7b-mbppplus",
+          "seed": 172569
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 2040200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "qwen25_7b",
+        "mbppplus",
+        "ewd_runtime",
+        "ewd_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_qwen25_7b_mbppplus_kgw_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_kgw_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-kgw_runtime-qwen25_7b-mbppplus",
+          "seed": 172569
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 2030200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "qwen25_7b",
+        "mbppplus",
+        "kgw_runtime",
+        "kgw_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_starcoder2_7b_heplus_stone_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_stone_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-stone_runtime-starcoder2_7b-heplus",
+          "seed": 427412
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "bigcode/starcoder2-7b"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 1010100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "starcoder2_7b",
+        "heplus",
+        "stone_runtime",
+        "stone_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_starcoder2_7b_heplus_sweet_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_sweet_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-sweet_runtime-starcoder2_7b-heplus",
+          "seed": 427412
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "bigcode/starcoder2-7b"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 1020100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "starcoder2_7b",
+        "heplus",
+        "sweet_runtime",
+        "sweet_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_starcoder2_7b_heplus_ewd_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_ewd_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-ewd_runtime-starcoder2_7b-heplus",
+          "seed": 427412
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "bigcode/starcoder2-7b"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 1040100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "starcoder2_7b",
+        "heplus",
+        "ewd_runtime",
+        "ewd_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_starcoder2_7b_heplus_kgw_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_kgw_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-kgw_runtime-starcoder2_7b-heplus",
+          "seed": 427412
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "bigcode/starcoder2-7b"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 1030100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "starcoder2_7b",
+        "heplus",
+        "kgw_runtime",
+        "kgw_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_starcoder2_7b_mbppplus_stone_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_stone_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-stone_runtime-starcoder2_7b-mbppplus",
+          "seed": 440336
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "bigcode/starcoder2-7b"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 1010200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "starcoder2_7b",
+        "mbppplus",
+        "stone_runtime",
+        "stone_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_starcoder2_7b_mbppplus_sweet_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_sweet_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-sweet_runtime-starcoder2_7b-mbppplus",
+          "seed": 440336
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "bigcode/starcoder2-7b"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 1020200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "starcoder2_7b",
+        "mbppplus",
+        "sweet_runtime",
+        "sweet_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_starcoder2_7b_mbppplus_ewd_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_ewd_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-ewd_runtime-starcoder2_7b-mbppplus",
+          "seed": 440336
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "bigcode/starcoder2-7b"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 1040200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "starcoder2_7b",
+        "mbppplus",
+        "ewd_runtime",
+        "ewd_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_starcoder2_7b_mbppplus_kgw_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_kgw_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-kgw_runtime-starcoder2_7b-mbppplus",
+          "seed": 440336
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "bigcode/starcoder2-7b"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 1030200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "starcoder2_7b",
+        "mbppplus",
+        "kgw_runtime",
+        "kgw_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_deepseek_coder_6p7b_heplus_stone_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_stone_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-stone_runtime-deepseek_coder_6p7b-heplus",
+          "seed": 877526
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 3010100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "deepseek_coder_6p7b",
+        "heplus",
+        "stone_runtime",
+        "stone_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_deepseek_coder_6p7b_heplus_sweet_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_sweet_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-sweet_runtime-deepseek_coder_6p7b-heplus",
+          "seed": 877526
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 3020100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "deepseek_coder_6p7b",
+        "heplus",
+        "sweet_runtime",
+        "sweet_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_deepseek_coder_6p7b_heplus_ewd_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_ewd_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-ewd_runtime-deepseek_coder_6p7b-heplus",
+          "seed": 877526
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 3040100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "deepseek_coder_6p7b",
+        "heplus",
+        "ewd_runtime",
+        "ewd_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_deepseek_coder_6p7b_heplus_kgw_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_humaneval_plus_kgw_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-kgw_runtime-deepseek_coder_6p7b-heplus",
+          "seed": 877526
+        },
+        "paths": {
+          "prepared_benchmark": "data/public/humaneval_plus/normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "humaneval_plus",
+          "source": "data/public/humaneval_plus/normalized.jsonl",
+          "prepared_output": "data/public/humaneval_plus/normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "HumanEval+",
+          "validation_scope": "python_first",
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_humaneval_plus"
+        },
+        "watermark": {
+          "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 3030100002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "deepseek_coder_6p7b",
+        "heplus",
+        "kgw_runtime",
+        "kgw_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_deepseek_coder_6p7b_mbppplus_stone_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_stone_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-stone_runtime-deepseek_coder_6p7b-mbppplus",
+          "seed": 725350
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 3010200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "deepseek_coder_6p7b",
+        "mbppplus",
+        "stone_runtime",
+        "stone_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_deepseek_coder_6p7b_mbppplus_sweet_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_sweet_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-sweet_runtime-deepseek_coder_6p7b-mbppplus",
+          "seed": 725350
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 3020200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "deepseek_coder_6p7b",
+        "mbppplus",
+        "sweet_runtime",
+        "sweet_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_deepseek_coder_6p7b_mbppplus_ewd_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_ewd_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-ewd_runtime-deepseek_coder_6p7b-mbppplus",
+          "seed": 725350
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 3040200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "deepseek_coder_6p7b",
+        "mbppplus",
+        "ewd_runtime",
+        "ewd_runtime"
+      ]
+    },
+    {
+      "run_id": "stage_b_deepseek_coder_6p7b_mbppplus_kgw_runtime",
+      "profile": "model_invocation_smoke",
+      "config": "configs/public_mbpp_plus_kgw_runtime.yaml",
+      "config_overrides": {
+        "project": {
+          "name": "codewmbench-stage-b-kgw_runtime-deepseek_coder_6p7b-mbppplus",
+          "seed": 725350
+        },
+        "paths": {
+          "prepared_benchmark": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl"
+        },
+        "benchmark": {
+          "public_source": "mbpp_plus",
+          "source": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "prepared_output": "data/compact/collections/suite_mbpp_plus_compact.normalized.jsonl",
+          "split": "test",
+          "limit": 2,
+          "include_reference_kinds": [
+            "canonical"
+          ],
+          "dataset_label": "MBPP+",
+          "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+          "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+          "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+          "validation_scope": "python_first",
+          "stress_suite": true,
+          "languages": [
+            "python"
+          ],
+          "source_group": "public_mbpp_plus"
+        },
+        "watermark": {
+          "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      },
+      "resource": "gpu",
+      "gpu_pool": "runtime",
+      "baseline_eval": true,
+      "baseline_eval_sample_limit": 4,
+      "priority": 3030200002,
+      "tags": [
+        "precheck",
+        "stage_b",
+        "deepseek_coder_6p7b",
+        "mbppplus",
+        "kgw_runtime",
+        "kgw_runtime"
+      ]
+    }
+  ]
+}

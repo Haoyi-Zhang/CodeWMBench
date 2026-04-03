@@ -1,0 +1,130 @@
+{
+  "authoring_path": "data\\interim\\crafted\\crafted_stress.normalized.authoring.jsonl",
+  "benchmark": "crafted_stress",
+  "canonical_reference_count": 750,
+  "category_counts": {
+    "class/object interaction": 16,
+    "cross-language idiom preservation": 17,
+    "data structures": 16,
+    "exception/error handling": 17,
+    "graph/search": 17,
+    "numeric/boundary conditions": 17,
+    "recursion/dp": 17,
+    "state machines/simulation": 17,
+    "strings/parsing": 16
+  },
+  "contract_drift_families": [],
+  "dataset_label": "CraftedStress",
+  "difficulty_counts": {
+    "easy": 100,
+    "hard": 375,
+    "medium": 275
+  },
+  "family_count": 150,
+  "family_difficulty_counts": {
+    "easy": 20,
+    "hard": 75,
+    "medium": 55
+  },
+  "family_language_coverage_rate": 1.0,
+  "language_counts": {
+    "cpp": 150,
+    "go": 150,
+    "java": 150,
+    "javascript": 150,
+    "python": 150
+  },
+  "languages": [
+    "python",
+    "cpp",
+    "java",
+    "javascript",
+    "go"
+  ],
+  "normalized_path": "data/interim/crafted/crafted_stress.normalized.jsonl",
+  "origin_type": "crafted_stress",
+  "reference_kind_counts": {
+    "canonical": 750
+  },
+  "reference_kind_total": 750,
+  "schema_version": 2,
+  "smoke_overlay_reference_count": 0,
+  "source_group": "crafted_stress",
+  "source_manifests": [
+    {
+      "benchmark": "crafted_stress",
+      "category_counts": {
+        "class/object interaction": 16,
+        "cross-language idiom preservation": 17,
+        "data structures": 16,
+        "exception/error handling": 17,
+        "graph/search": 17,
+        "numeric/boundary conditions": 17,
+        "recursion/dp": 17,
+        "state machines/simulation": 17,
+        "strings/parsing": 16
+      },
+      "dataset_label": "CraftedStress",
+      "family_count": 150,
+      "languages": [
+        "python",
+        "cpp",
+        "java",
+        "javascript",
+        "go"
+      ],
+      "origin_type": "crafted_stress",
+      "source_group": "crafted_stress",
+      "task_count": 750,
+      "task_count_per_family": 5,
+      "template_family_counts": {
+        "API-style normalization": 25,
+        "arrays/lists": 8,
+        "dp/recursion": 17,
+        "graph/search": 17,
+        "interval/greedy": 8,
+        "maps/sets": 8,
+        "math/bit ops": 9,
+        "parsing": 8,
+        "stateful update": 25,
+        "strings": 25
+      }
+    }
+  ],
+  "task_count": 750,
+  "task_count_per_family": 5,
+  "taxonomy_categories": [
+    "class/object interaction",
+    "cross-language idiom preservation",
+    "data structures",
+    "exception/error handling",
+    "graph/search",
+    "numeric/boundary conditions",
+    "recursion/dp",
+    "state machines/simulation",
+    "strings/parsing"
+  ],
+  "template_family_counts": {
+    "API-style normalization": 25,
+    "arrays/lists": 8,
+    "dp/recursion": 17,
+    "graph/search": 17,
+    "interval/greedy": 8,
+    "maps/sets": 8,
+    "math/bit ops": 9,
+    "parsing": 8,
+    "stateful update": 25,
+    "strings": 25
+  },
+  "validation_backend_counts": {
+    "docker_remote": 600,
+    "python_exec": 150
+  },
+  "validation_supported_languages": [
+    "python",
+    "cpp",
+    "java",
+    "javascript",
+    "go"
+  ]
+}

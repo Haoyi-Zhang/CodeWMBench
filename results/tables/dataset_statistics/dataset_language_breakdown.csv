@@ -1,0 +1,46 @@
+scope,slug,dataset_label,language,record_count
+inventory,human_eval,HumanEval,python,164
+inventory,humaneval_plus,HumanEval+,python,164
+inventory,mbpp_plus,MBPP+,python,378
+inventory,humaneval_x,HumanEval-X,cpp,164
+inventory,humaneval_x,HumanEval-X,go,164
+inventory,humaneval_x,HumanEval-X,java,164
+inventory,humaneval_x,HumanEval-X,javascript,164
+inventory,humaneval_x,HumanEval-X,python,164
+inventory,mbxp_5lang,MBXP-5lang,cpp,848
+inventory,mbxp_5lang,MBXP-5lang,go,939
+inventory,mbxp_5lang,MBXP-5lang,java,966
+inventory,mbxp_5lang,MBXP-5lang,javascript,966
+inventory,mbxp_5lang,MBXP-5lang,python,974
+inventory,crafted_original,Crafted Original,cpp,300
+inventory,crafted_original,Crafted Original,go,300
+inventory,crafted_original,Crafted Original,java,300
+inventory,crafted_original,Crafted Original,javascript,300
+inventory,crafted_original,Crafted Original,python,300
+inventory,crafted_translation,Crafted Translation,cpp,200
+inventory,crafted_translation,Crafted Translation,go,200
+inventory,crafted_translation,Crafted Translation,java,200
+inventory,crafted_translation,Crafted Translation,javascript,200
+inventory,crafted_translation,Crafted Translation,python,200
+inventory,crafted_stress,Crafted Stress,cpp,150
+inventory,crafted_stress,Crafted Stress,go,150
+inventory,crafted_stress,Crafted Stress,java,150
+inventory,crafted_stress,Crafted Stress,javascript,150
+inventory,crafted_stress,Crafted Stress,python,150
+compact,humaneval_plus,HumanEval+,python,164
+compact,mbpp_plus,MBPP+,python,240
+compact,humaneval_x,HumanEval-X (py/cpp/java slice),cpp,40
+compact,humaneval_x,HumanEval-X (py/cpp/java slice),java,40
+compact,humaneval_x,HumanEval-X (py/cpp/java slice),python,40
+compact,mbxp_5lang,MBXP-5lang (py/cpp/java slice),cpp,40
+compact,mbxp_5lang,MBXP-5lang (py/cpp/java slice),java,40
+compact,mbxp_5lang,MBXP-5lang (py/cpp/java slice),python,40
+compact,crafted_original,Crafted Original,cpp,40
+compact,crafted_original,Crafted Original,java,40
+compact,crafted_original,Crafted Original,python,40
+compact,crafted_translation,Crafted Translation,cpp,40
+compact,crafted_translation,Crafted Translation,java,40
+compact,crafted_translation,Crafted Translation,python,40
+compact,crafted_stress,Crafted Stress,cpp,40
+compact,crafted_stress,Crafted Stress,java,40
+compact,crafted_stress,Crafted Stress,python,40

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codewmbench"
+version = "0.1.0"
+description = "Executable benchmark suite and multidimensional evaluation framework for code watermarking"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["benchmark", "code watermarking", "robustness", "evaluation", "code generation"]
+dependencies = [
+  "PyYAML>=6.0",
+  "click>=8.1",
+  "rich>=13.0",
+  "matplotlib>=3.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/Haoyi-Zhang/CodeWMBench"
+Repository = "https://github.com/Haoyi-Zhang/CodeWMBench"
+Documentation = "https://github.com/Haoyi-Zhang/CodeWMBench/tree/main/docs"
+
+[project.scripts]
+codewmbench = "codewmbench.__main__:cli"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["codewmbench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:typeguard"

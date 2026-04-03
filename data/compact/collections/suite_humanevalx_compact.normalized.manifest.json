@@ -1,0 +1,262 @@
+{
+  "benchmark": "humaneval_x",
+  "canonical_reference_count": 120,
+  "claimed_languages": [
+    "python",
+    "cpp",
+    "java"
+  ],
+  "collection_name": "suite_humanevalx_compact",
+  "coverage": {
+    "claimed_language_count": 3,
+    "clean_reference_compile_rate": null,
+    "clean_reference_pass_rate": null,
+    "declared_semantic_validation_language_rate": 1.0,
+    "declared_semantic_validation_rate": 1.0,
+    "declared_unvalidated_languages": [],
+    "missing_claimed_languages": [],
+    "observed_coverage_rate": 1.0,
+    "observed_language_count": 3,
+    "runtime_semantic_validation_language_rate": null,
+    "runtime_semantic_validation_rate": null,
+    "runtime_unvalidated_languages": [],
+    "runtime_validation_annotations_available": false,
+    "runtime_validation_basis": "unavailable",
+    "semantic_validation_language_rate": null,
+    "semantic_validation_rate": null,
+    "unvalidated_languages": []
+  },
+  "dataset_label": "HumanEval-X (py/cpp/java slice)",
+  "datasets": [
+    "HumanEval-X"
+  ],
+  "difficulty_counts": {
+    "easy": 27,
+    "hard": 29,
+    "medium": 64
+  },
+  "family_count": 40,
+  "family_counts": {
+    "humaneval_x_0": 3,
+    "humaneval_x_1": 3,
+    "humaneval_x_10": 3,
+    "humaneval_x_100": 3,
+    "humaneval_x_101": 3,
+    "humaneval_x_102": 3,
+    "humaneval_x_103": 3,
+    "humaneval_x_104": 3,
+    "humaneval_x_105": 3,
+    "humaneval_x_106": 3,
+    "humaneval_x_107": 3,
+    "humaneval_x_108": 3,
+    "humaneval_x_109": 3,
+    "humaneval_x_11": 3,
+    "humaneval_x_110": 3,
+    "humaneval_x_111": 3,
+    "humaneval_x_112": 3,
+    "humaneval_x_113": 3,
+    "humaneval_x_114": 3,
+    "humaneval_x_115": 3,
+    "humaneval_x_116": 3,
+    "humaneval_x_117": 3,
+    "humaneval_x_12": 3,
+    "humaneval_x_120": 3,
+    "humaneval_x_126": 3,
+    "humaneval_x_129": 3,
+    "humaneval_x_13": 3,
+    "humaneval_x_130": 3,
+    "humaneval_x_133": 3,
+    "humaneval_x_135": 3,
+    "humaneval_x_138": 3,
+    "humaneval_x_14": 3,
+    "humaneval_x_15": 3,
+    "humaneval_x_16": 3,
+    "humaneval_x_162": 3,
+    "humaneval_x_18": 3,
+    "humaneval_x_2": 3,
+    "humaneval_x_22": 3,
+    "humaneval_x_23": 3,
+    "humaneval_x_24": 3
+  },
+  "include_difficulties": [
+    "easy",
+    "hard",
+    "medium"
+  ],
+  "include_languages": [
+    "python",
+    "cpp",
+    "java"
+  ],
+  "include_origin_types": [
+    "public"
+  ],
+  "include_reference_kinds": [
+    "canonical"
+  ],
+  "include_source_groups": [
+    "public_humaneval_x"
+  ],
+  "input_filtered_counts": {
+    "data/public/humaneval_x/normalized.jsonl": 492
+  },
+  "inputs": [
+    "data/public/humaneval_x/normalized.jsonl"
+  ],
+  "language_counts": {
+    "cpp": 40,
+    "java": 40,
+    "python": 40
+  },
+  "observed_languages": [
+    "cpp",
+    "java",
+    "python"
+  ],
+  "origin_type_counts": {
+    "public": 120
+  },
+  "quota_per_language": {
+    "cpp": 40,
+    "java": 40,
+    "python": 40
+  },
+  "quota_per_source_group": {},
+  "record_count": 120,
+  "reference_kind_counts": {
+    "canonical": 120
+  },
+  "reference_kind_total": 120,
+  "sample_ids_path": "data/compact/collections/suite_humanevalx_compact.normalized.sample_ids.json",
+  "schema_version": 1,
+  "smoke_overlay_reference_count": 0,
+  "source_group_counts": {
+    "public_humaneval_x": 120
+  },
+  "source_manifests": [
+    {
+      "benchmark": "humaneval_x",
+      "dataset_label": "HumanEval-X",
+      "language": "python",
+      "license_note": "Apache-2.0; CodeGeeX HumanEval-X benchmark",
+      "sample_task_ids": [
+        "Python/0",
+        "Python/1",
+        "Python/2",
+        "Python/163"
+      ],
+      "source_group": "public_humaneval_x",
+      "source_path": "humaneval_python.jsonl.gz",
+      "source_revision": "2838420b7b4492cf3d16bce5320e26e65960c9e2",
+      "source_sha256": "5752fb122efddb0e9b47c77907ae6ce9a15aac4dea14e44c46032c831e6b987a",
+      "source_url": "https://github.com/zai-org/CodeGeeX",
+      "split": "test",
+      "task_count": 164,
+      "task_id_digest": "b5fcdfc1589031c8b7ebc2210a49196c64789b44126c8386fefb1290e9c669e3"
+    },
+    {
+      "benchmark": "humaneval_x",
+      "dataset_label": "HumanEval-X",
+      "language": "cpp",
+      "license_note": "Apache-2.0; CodeGeeX HumanEval-X benchmark",
+      "sample_task_ids": [
+        "CPP/0",
+        "CPP/1",
+        "CPP/2",
+        "CPP/163"
+      ],
+      "source_group": "public_humaneval_x",
+      "source_path": "humaneval_cpp.jsonl.gz",
+      "source_revision": "2838420b7b4492cf3d16bce5320e26e65960c9e2",
+      "source_sha256": "dcf2e280a1e91bbc3c5f90edb41397e8a9ac1ccc9f5d2b70082f0b0fbfb6dbb0",
+      "source_url": "https://github.com/zai-org/CodeGeeX",
+      "split": "test",
+      "task_count": 164,
+      "task_id_digest": "684f175265d45cf7e2f69a33145e532d0805763ab07b0f8b21b922cb1f83459c"
+    },
+    {
+      "benchmark": "humaneval_x",
+      "dataset_label": "HumanEval-X",
+      "language": "java",
+      "license_note": "Apache-2.0; CodeGeeX HumanEval-X benchmark",
+      "sample_task_ids": [
+        "Java/0",
+        "Java/1",
+        "Java/2",
+        "Java/163"
+      ],
+      "source_group": "public_humaneval_x",
+      "source_path": "humaneval_java.jsonl.gz",
+      "source_revision": "2838420b7b4492cf3d16bce5320e26e65960c9e2",
+      "source_sha256": "276f36db2eb7aeb864f36a19a2f4e1bb2460fb6e22ff100f0b5bedabe3799967",
+      "source_url": "https://github.com/zai-org/CodeGeeX",
+      "split": "test",
+      "task_count": 164,
+      "task_id_digest": "ef9527ec80d5af76fb5e3c6e52136a832c38c07a33e3e0136791229a7600306f"
+    },
+    {
+      "benchmark": "humaneval_x",
+      "dataset_label": "HumanEval-X",
+      "language": "javascript",
+      "license_note": "Apache-2.0; CodeGeeX HumanEval-X benchmark",
+      "sample_task_ids": [
+        "JavaScript/0",
+        "JavaScript/1",
+        "JavaScript/2",
+        "JavaScript/163"
+      ],
+      "source_group": "public_humaneval_x",
+      "source_path": "humaneval_js.jsonl.gz",
+      "source_revision": "2838420b7b4492cf3d16bce5320e26e65960c9e2",
+      "source_sha256": "fe5d467f2c1a027b3f6f18d3729aca01f6458c1de2e2d1292a019c5aa9bed424",
+      "source_url": "https://github.com/zai-org/CodeGeeX",
+      "split": "test",
+      "task_count": 164,
+      "task_id_digest": "329726af2b61bbeaa9c30d30097d045a00016a88da2c2157ae6c645fcab4ebe1"
+    },
+    {
+      "benchmark": "humaneval_x",
+      "dataset_label": "HumanEval-X",
+      "language": "go",
+      "license_note": "Apache-2.0; CodeGeeX HumanEval-X benchmark",
+      "sample_task_ids": [
+        "Go/0",
+        "Go/1",
+        "Go/2",
+        "Go/163"
+      ],
+      "source_group": "public_humaneval_x",
+      "source_path": "humaneval_go.jsonl.gz",
+      "source_revision": "2838420b7b4492cf3d16bce5320e26e65960c9e2",
+      "source_sha256": "09126ef64ac68f87296c5f3781186aedc5dec799b114d9df99d6de4a715a7830",
+      "source_url": "https://github.com/zai-org/CodeGeeX",
+      "split": "test",
+      "task_count": 164,
+      "task_id_digest": "a682a808f9925436e17370c33666d91893c3608301bcf1e0e43553a0582ff107"
+    }
+  ],
+  "suite_selection_policy": {
+    "common_support_languages": [
+      "python",
+      "cpp",
+      "java"
+    ],
+    "languages": [
+      "python",
+      "cpp",
+      "java"
+    ],
+    "strata": [
+      "difficulty"
+    ],
+    "target_family_count": 40,
+    "target_record_count": 120,
+    "type": "family_balanced_multilingual_compact_slice"
+  },
+  "task_count": 120,
+  "validation_supported_languages": [
+    "cpp",
+    "java",
+    "python"
+  ]
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 300,
+    "record_count": 250,
+    "scope": "inventory",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "api-style normalization",
+    "template_family_label": "API-style normalization"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 300,
+    "record_count": 250,
+    "scope": "inventory",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "parsing",
+    "template_family_label": "parsing"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 300,
+    "record_count": 190,
+    "scope": "inventory",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "arrays/lists",
+    "template_family_label": "arrays/lists"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 300,
+    "record_count": 190,
+    "scope": "inventory",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "dp/recursion",
+    "template_family_label": "dp/recursion"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 300,
+    "record_count": 190,
+    "scope": "inventory",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "math/bit ops",
+    "template_family_label": "math/bit ops"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 300,
+    "record_count": 185,
+    "scope": "inventory",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "graph/search",
+    "template_family_label": "graph/search"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 300,
+    "record_count": 185,
+    "scope": "inventory",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "stateful update",
+    "template_family_label": "stateful update"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 300,
+    "record_count": 60,
+    "scope": "inventory",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "maps/sets",
+    "template_family_label": "maps/sets"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 200,
+    "record_count": 240,
+    "scope": "inventory",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "api-style normalization",
+    "template_family_label": "API-style normalization"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 200,
+    "record_count": 165,
+    "scope": "inventory",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "arrays/lists",
+    "template_family_label": "arrays/lists"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 200,
+    "record_count": 165,
+    "scope": "inventory",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "maps/sets",
+    "template_family_label": "maps/sets"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 200,
+    "record_count": 165,
+    "scope": "inventory",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "parsing",
+    "template_family_label": "parsing"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 200,
+    "record_count": 165,
+    "scope": "inventory",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "strings",
+    "template_family_label": "strings"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 200,
+    "record_count": 100,
+    "scope": "inventory",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "stateful update",
+    "template_family_label": "stateful update"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 125,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "api-style normalization",
+    "template_family_label": "API-style normalization"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 125,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "stateful update",
+    "template_family_label": "stateful update"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 125,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "strings",
+    "template_family_label": "strings"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 85,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "dp/recursion",
+    "template_family_label": "dp/recursion"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 85,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "graph/search",
+    "template_family_label": "graph/search"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 45,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "math/bit ops",
+    "template_family_label": "math/bit ops"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 40,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "arrays/lists",
+    "template_family_label": "arrays/lists"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 40,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "interval/greedy",
+    "template_family_label": "interval/greedy"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 40,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "maps/sets",
+    "template_family_label": "maps/sets"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 150,
+    "record_count": 40,
+    "scope": "inventory",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "parsing",
+    "template_family_label": "parsing"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 40,
+    "record_count": 24,
+    "scope": "compact",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "api-style normalization",
+    "template_family_label": "API-style normalization"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 40,
+    "record_count": 18,
+    "scope": "compact",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "parsing",
+    "template_family_label": "parsing"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "arrays/lists",
+    "template_family_label": "arrays/lists"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "dp/recursion",
+    "template_family_label": "dp/recursion"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "graph/search",
+    "template_family_label": "graph/search"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "math/bit ops",
+    "template_family_label": "math/bit ops"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "stateful update",
+    "template_family_label": "stateful update"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "family_count": 40,
+    "record_count": 3,
+    "scope": "compact",
+    "slug": "crafted_original",
+    "source_type": "crafted",
+    "template_family": "maps/sets",
+    "template_family_label": "maps/sets"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 40,
+    "record_count": 33,
+    "scope": "compact",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "api-style normalization",
+    "template_family_label": "API-style normalization"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 40,
+    "record_count": 24,
+    "scope": "compact",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "maps/sets",
+    "template_family_label": "maps/sets"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 40,
+    "record_count": 24,
+    "scope": "compact",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "strings",
+    "template_family_label": "strings"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "arrays/lists",
+    "template_family_label": "arrays/lists"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "parsing",
+    "template_family_label": "parsing"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "family_count": 40,
+    "record_count": 9,
+    "scope": "compact",
+    "slug": "crafted_translation",
+    "source_type": "crafted",
+    "template_family": "stateful update",
+    "template_family_label": "stateful update"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 24,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "api-style normalization",
+    "template_family_label": "API-style normalization"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 18,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "strings",
+    "template_family_label": "strings"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "graph/search",
+    "template_family_label": "graph/search"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 15,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "stateful update",
+    "template_family_label": "stateful update"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 12,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "dp/recursion",
+    "template_family_label": "dp/recursion"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 9,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "arrays/lists",
+    "template_family_label": "arrays/lists"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 9,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "math/bit ops",
+    "template_family_label": "math/bit ops"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 9,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "parsing",
+    "template_family_label": "parsing"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 6,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "interval/greedy",
+    "template_family_label": "interval/greedy"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "family_count": 40,
+    "record_count": 3,
+    "scope": "compact",
+    "slug": "crafted_stress",
+    "source_type": "crafted",
+    "template_family": "maps/sets",
+    "template_family_label": "maps/sets"
+  }
+]

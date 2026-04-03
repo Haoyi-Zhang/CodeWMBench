@@ -1,0 +1,49 @@
+scope,slug,dataset_label,source_type,template_family,template_family_label,record_count,family_count
+inventory,crafted_original,Crafted Original,crafted,api-style normalization,API-style normalization,250,300
+inventory,crafted_original,Crafted Original,crafted,parsing,parsing,250,300
+inventory,crafted_original,Crafted Original,crafted,arrays/lists,arrays/lists,190,300
+inventory,crafted_original,Crafted Original,crafted,dp/recursion,dp/recursion,190,300
+inventory,crafted_original,Crafted Original,crafted,math/bit ops,math/bit ops,190,300
+inventory,crafted_original,Crafted Original,crafted,graph/search,graph/search,185,300
+inventory,crafted_original,Crafted Original,crafted,stateful update,stateful update,185,300
+inventory,crafted_original,Crafted Original,crafted,maps/sets,maps/sets,60,300
+inventory,crafted_translation,Crafted Translation,crafted,api-style normalization,API-style normalization,240,200
+inventory,crafted_translation,Crafted Translation,crafted,arrays/lists,arrays/lists,165,200
+inventory,crafted_translation,Crafted Translation,crafted,maps/sets,maps/sets,165,200
+inventory,crafted_translation,Crafted Translation,crafted,parsing,parsing,165,200
+inventory,crafted_translation,Crafted Translation,crafted,strings,strings,165,200
+inventory,crafted_translation,Crafted Translation,crafted,stateful update,stateful update,100,200
+inventory,crafted_stress,Crafted Stress,crafted,api-style normalization,API-style normalization,125,150
+inventory,crafted_stress,Crafted Stress,crafted,stateful update,stateful update,125,150
+inventory,crafted_stress,Crafted Stress,crafted,strings,strings,125,150
+inventory,crafted_stress,Crafted Stress,crafted,dp/recursion,dp/recursion,85,150
+inventory,crafted_stress,Crafted Stress,crafted,graph/search,graph/search,85,150
+inventory,crafted_stress,Crafted Stress,crafted,math/bit ops,math/bit ops,45,150
+inventory,crafted_stress,Crafted Stress,crafted,arrays/lists,arrays/lists,40,150
+inventory,crafted_stress,Crafted Stress,crafted,interval/greedy,interval/greedy,40,150
+inventory,crafted_stress,Crafted Stress,crafted,maps/sets,maps/sets,40,150
+inventory,crafted_stress,Crafted Stress,crafted,parsing,parsing,40,150
+compact,crafted_original,Crafted Original,crafted,api-style normalization,API-style normalization,24,40
+compact,crafted_original,Crafted Original,crafted,parsing,parsing,18,40
+compact,crafted_original,Crafted Original,crafted,arrays/lists,arrays/lists,15,40
+compact,crafted_original,Crafted Original,crafted,dp/recursion,dp/recursion,15,40
+compact,crafted_original,Crafted Original,crafted,graph/search,graph/search,15,40
+compact,crafted_original,Crafted Original,crafted,math/bit ops,math/bit ops,15,40
+compact,crafted_original,Crafted Original,crafted,stateful update,stateful update,15,40
+compact,crafted_original,Crafted Original,crafted,maps/sets,maps/sets,3,40
+compact,crafted_translation,Crafted Translation,crafted,api-style normalization,API-style normalization,33,40
+compact,crafted_translation,Crafted Translation,crafted,maps/sets,maps/sets,24,40
+compact,crafted_translation,Crafted Translation,crafted,strings,strings,24,40
+compact,crafted_translation,Crafted Translation,crafted,arrays/lists,arrays/lists,15,40
+compact,crafted_translation,Crafted Translation,crafted,parsing,parsing,15,40
+compact,crafted_translation,Crafted Translation,crafted,stateful update,stateful update,9,40
+compact,crafted_stress,Crafted Stress,crafted,api-style normalization,API-style normalization,24,40
+compact,crafted_stress,Crafted Stress,crafted,strings,strings,18,40
+compact,crafted_stress,Crafted Stress,crafted,graph/search,graph/search,15,40
+compact,crafted_stress,Crafted Stress,crafted,stateful update,stateful update,15,40
+compact,crafted_stress,Crafted Stress,crafted,dp/recursion,dp/recursion,12,40
+compact,crafted_stress,Crafted Stress,crafted,arrays/lists,arrays/lists,9,40
+compact,crafted_stress,Crafted Stress,crafted,math/bit ops,math/bit ops,9,40
+compact,crafted_stress,Crafted Stress,crafted,parsing,parsing,9,40
+compact,crafted_stress,Crafted Stress,crafted,interval/greedy,interval/greedy,6,40
+compact,crafted_stress,Crafted Stress,crafted,maps/sets,maps/sets,3,40

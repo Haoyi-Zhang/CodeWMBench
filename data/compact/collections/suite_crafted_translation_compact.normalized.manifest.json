@@ -1,0 +1,209 @@
+{
+  "benchmark": "crafted_translation",
+  "canonical_reference_count": 120,
+  "category_counts": {
+    "class/object interaction": 24,
+    "cross-language idiom preservation": 24,
+    "data structures": 24,
+    "exception/error handling": 24,
+    "strings/parsing": 24
+  },
+  "claimed_languages": [
+    "python",
+    "cpp",
+    "java"
+  ],
+  "collection_name": "suite_crafted_translation_compact",
+  "coverage": {
+    "claimed_language_count": 3,
+    "clean_reference_compile_rate": null,
+    "clean_reference_pass_rate": null,
+    "declared_semantic_validation_language_rate": 1.0,
+    "declared_semantic_validation_rate": 1.0,
+    "declared_unvalidated_languages": [],
+    "missing_claimed_languages": [],
+    "observed_coverage_rate": 1.0,
+    "observed_language_count": 3,
+    "runtime_semantic_validation_language_rate": null,
+    "runtime_semantic_validation_rate": null,
+    "runtime_unvalidated_languages": [],
+    "runtime_validation_annotations_available": false,
+    "runtime_validation_basis": "unavailable",
+    "semantic_validation_language_rate": null,
+    "semantic_validation_rate": null,
+    "unvalidated_languages": []
+  },
+  "dataset_label": "Crafted Translation",
+  "datasets": [
+    "CraftedTranslation"
+  ],
+  "difficulty_counts": {
+    "easy": 30,
+    "hard": 45,
+    "medium": 45
+  },
+  "family_count": 40,
+  "family_counts": {
+    "crafted_translation_000": 3,
+    "crafted_translation_001": 3,
+    "crafted_translation_002": 3,
+    "crafted_translation_003": 3,
+    "crafted_translation_004": 3,
+    "crafted_translation_005": 3,
+    "crafted_translation_006": 3,
+    "crafted_translation_007": 3,
+    "crafted_translation_008": 3,
+    "crafted_translation_009": 3,
+    "crafted_translation_050": 3,
+    "crafted_translation_051": 3,
+    "crafted_translation_052": 3,
+    "crafted_translation_053": 3,
+    "crafted_translation_054": 3,
+    "crafted_translation_055": 3,
+    "crafted_translation_056": 3,
+    "crafted_translation_057": 3,
+    "crafted_translation_058": 3,
+    "crafted_translation_059": 3,
+    "crafted_translation_060": 3,
+    "crafted_translation_061": 3,
+    "crafted_translation_062": 3,
+    "crafted_translation_063": 3,
+    "crafted_translation_064": 3,
+    "crafted_translation_160": 3,
+    "crafted_translation_161": 3,
+    "crafted_translation_162": 3,
+    "crafted_translation_163": 3,
+    "crafted_translation_164": 3,
+    "crafted_translation_165": 3,
+    "crafted_translation_166": 3,
+    "crafted_translation_167": 3,
+    "crafted_translation_168": 3,
+    "crafted_translation_169": 3,
+    "crafted_translation_170": 3,
+    "crafted_translation_171": 3,
+    "crafted_translation_172": 3,
+    "crafted_translation_173": 3,
+    "crafted_translation_174": 3
+  },
+  "include_difficulties": [
+    "easy",
+    "hard",
+    "medium"
+  ],
+  "include_languages": [
+    "python",
+    "cpp",
+    "java"
+  ],
+  "include_origin_types": [
+    "crafted_translation"
+  ],
+  "include_reference_kinds": [
+    "canonical"
+  ],
+  "include_source_groups": [
+    "crafted_translation"
+  ],
+  "input_filtered_counts": {
+    "data/compact/crafted/crafted_translation.normalized.jsonl": 600
+  },
+  "inputs": [
+    "data/compact/crafted/crafted_translation.normalized.jsonl"
+  ],
+  "language_counts": {
+    "cpp": 40,
+    "java": 40,
+    "python": 40
+  },
+  "observed_languages": [
+    "cpp",
+    "java",
+    "python"
+  ],
+  "origin_type_counts": {
+    "crafted_translation": 120
+  },
+  "quota_per_language": {
+    "cpp": 40,
+    "java": 40,
+    "python": 40
+  },
+  "quota_per_source_group": {},
+  "record_count": 120,
+  "reference_kind_counts": {
+    "canonical": 120
+  },
+  "reference_kind_total": 120,
+  "sample_ids_path": "data/compact/collections/suite_crafted_translation_compact.normalized.sample_ids.json",
+  "schema_version": 1,
+  "smoke_overlay_reference_count": 0,
+  "source_group_counts": {
+    "crafted_translation": 120
+  },
+  "source_manifests": [
+    {
+      "benchmark": "crafted_translation",
+      "category_counts": {
+        "class/object interaction": 40,
+        "cross-language idiom preservation": 40,
+        "data structures": 40,
+        "exception/error handling": 40,
+        "strings/parsing": 40
+      },
+      "dataset_label": "CraftedTranslation",
+      "family_count": 200,
+      "languages": [
+        "python",
+        "cpp",
+        "java",
+        "javascript",
+        "go"
+      ],
+      "origin_type": "crafted_translation",
+      "source_group": "crafted_translation",
+      "task_count": 1000,
+      "task_count_per_family": 5,
+      "template_family_counts": {
+        "API-style normalization": 48,
+        "arrays/lists": 33,
+        "maps/sets": 33,
+        "parsing": 33,
+        "stateful update": 20,
+        "strings": 33
+      }
+    }
+  ],
+  "suite_selection_policy": {
+    "common_support_languages": [
+      "python",
+      "cpp",
+      "java"
+    ],
+    "languages": [
+      "python",
+      "cpp",
+      "java"
+    ],
+    "strata": [
+      "category",
+      "difficulty"
+    ],
+    "target_family_count": 40,
+    "target_record_count": 120,
+    "type": "category_balanced_multilingual_compact_slice"
+  },
+  "task_count": 120,
+  "template_family_counts": {
+    "api-style normalization": 33,
+    "arrays/lists": 15,
+    "maps/sets": 24,
+    "parsing": 15,
+    "stateful update": 9,
+    "strings": 24
+  },
+  "validation_supported_languages": [
+    "cpp",
+    "java",
+    "python"
+  ]
+}

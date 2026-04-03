@@ -1,0 +1,52 @@
+{
+  "project": {
+    "name": "codewmbench-watermark",
+    "artifact_mode": "anonymous",
+    "seed": 2026
+  },
+  "paths": {
+    "attack_matrix": "data/fixtures/attacks/attack_matrix.json",
+    "prepared_benchmark": "data/interim/benchmark.normalized.jsonl",
+    "results_root": "results/runs",
+    "cache_root": "model_cache"
+  },
+  "benchmark": {
+    "source": "data/fixtures/benchmarks/synthetic_tasks.jsonl",
+    "prepared_output": "data/interim/benchmark.normalized.jsonl",
+    "limit": 8
+  },
+  "watermark": {
+    "scheme": "kgw",
+    "strength": 0.55,
+    "bias": 0.1,
+    "seed": 2026
+  },
+  "attacks": {
+    "include": [
+      "comment_strip",
+      "identifier_rename",
+      "whitespace_normalize",
+      "noise_insert",
+      "control_flow_flatten",
+      "block_shuffle",
+      "budgeted_adaptive"
+    ]
+  },
+  "attack_parameters": {
+    "budgeted_adaptive": {
+        "budget": 3,
+        "min_quality": 0.4,
+        "candidate_order": [
+          "comment_strip",
+          "whitespace_normalize",
+          "identifier_rename",
+          "control_flow_flatten",
+          "block_shuffle"
+        ]
+      }
+    },
+  "reporting": {
+    "top_k_failures": 5,
+    "pass_threshold": 0.7
+  }
+}

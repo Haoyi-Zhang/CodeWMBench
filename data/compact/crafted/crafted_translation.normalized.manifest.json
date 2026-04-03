@@ -1,0 +1,114 @@
+{
+  "authoring_path": "data\\interim\\crafted\\crafted_translation.normalized.authoring.jsonl",
+  "benchmark": "crafted_translation",
+  "canonical_reference_count": 1000,
+  "category_counts": {
+    "class/object interaction": 40,
+    "cross-language idiom preservation": 40,
+    "data structures": 40,
+    "exception/error handling": 40,
+    "strings/parsing": 40
+  },
+  "contract_drift_families": [],
+  "dataset_label": "CraftedTranslation",
+  "difficulty_counts": {
+    "easy": 250,
+    "hard": 200,
+    "medium": 550
+  },
+  "family_count": 200,
+  "family_difficulty_counts": {
+    "easy": 50,
+    "hard": 40,
+    "medium": 110
+  },
+  "family_language_coverage_rate": 1.0,
+  "language_counts": {
+    "cpp": 200,
+    "go": 200,
+    "java": 200,
+    "javascript": 200,
+    "python": 200
+  },
+  "languages": [
+    "python",
+    "cpp",
+    "java",
+    "javascript",
+    "go"
+  ],
+  "normalized_path": "data/interim/crafted/crafted_translation.normalized.jsonl",
+  "origin_type": "crafted_translation",
+  "reference_kind_counts": {
+    "canonical": 1000
+  },
+  "reference_kind_total": 1000,
+  "schema_version": 2,
+  "smoke_overlay_reference_count": 0,
+  "source_group": "crafted_translation",
+  "source_manifests": [
+    {
+      "benchmark": "crafted_translation",
+      "category_counts": {
+        "class/object interaction": 40,
+        "cross-language idiom preservation": 40,
+        "data structures": 40,
+        "exception/error handling": 40,
+        "strings/parsing": 40
+      },
+      "dataset_label": "CraftedTranslation",
+      "family_count": 200,
+      "languages": [
+        "python",
+        "cpp",
+        "java",
+        "javascript",
+        "go"
+      ],
+      "origin_type": "crafted_translation",
+      "source_group": "crafted_translation",
+      "task_count": 1000,
+      "task_count_per_family": 5,
+      "template_family_counts": {
+        "API-style normalization": 48,
+        "arrays/lists": 33,
+        "maps/sets": 33,
+        "parsing": 33,
+        "stateful update": 20,
+        "strings": 33
+      }
+    }
+  ],
+  "task_count": 1000,
+  "task_count_per_family": 5,
+  "taxonomy_categories": [
+    "class/object interaction",
+    "cross-language idiom preservation",
+    "data structures",
+    "exception/error handling",
+    "graph/search",
+    "numeric/boundary conditions",
+    "recursion/dp",
+    "state machines/simulation",
+    "strings/parsing"
+  ],
+  "template_family_counts": {
+    "API-style normalization": 48,
+    "arrays/lists": 33,
+    "maps/sets": 33,
+    "parsing": 33,
+    "stateful update": 20,
+    "strings": 33
+  },
+  "validation_backend_counts": {
+    "docker_remote": 800,
+    "python_exec": 200
+  },
+  "validation_supported_languages": [
+    "python",
+    "cpp",
+    "java",
+    "javascript",
+    "go"
+  ]
+}

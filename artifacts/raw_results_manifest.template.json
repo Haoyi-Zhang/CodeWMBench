@@ -1,0 +1,15 @@
+{
+  "artifact_name": "CodeWMBench-TOSEM-compact-raw-results",
+  "release_status": "fill-before-public-release",
+  "zenodo_doi": "TBD",
+  "download_url": "TBD",
+  "matrix_root": "results/matrix/suite_all_models_methods",
+  "required_paths": [
+    "results/matrix/suite_all_models_methods/matrix_index.json"
+  ],
+  "optional_paths": [
+    "results/certifications",
+    "results/audits"
+  ],
+  "notes": "Populate this manifest with the final public raw-results artifact location and checksums before release."
+}

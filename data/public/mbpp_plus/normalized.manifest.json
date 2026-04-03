@@ -1,0 +1,61 @@
+{
+  "adapter_name": "mbpp-plus",
+  "artifact_policy": "allowed",
+  "benchmark": "mbpp_plus",
+  "canonical_reference_rate": 1.0,
+  "counts": {
+    "expected": 378,
+    "observed": 378
+  },
+  "dataset_label": "MBPP+",
+  "datasets": [
+    "MBPP+"
+  ],
+  "difficulty_counts": {
+    "easy": 350,
+    "hard": 1,
+    "medium": 27
+  },
+  "expected_task_count": 378,
+  "extraction_rules": [],
+  "included_in_core": true,
+  "license_note": "Apache-2.0; EvalPlus MBPP+ release",
+  "normalized_path": "data/public/mbpp_plus/normalized.jsonl",
+  "notes": "",
+  "observed_languages": [
+    "python"
+  ],
+  "origin_type_counts": {
+    "public": 378
+  },
+  "reference_kind_counts": {
+    "canonical": 378
+  },
+  "sample_ids_path": "data/public/mbpp_plus/normalized.sample_ids.json",
+  "schema_version": 2,
+  "source_archive_sha256": "af43697e8791c4c149bdfd6b489d8b5412507551ac20e28a439f650b8225db63",
+  "source_group": "public_mbpp_plus",
+  "source_group_counts": {
+    "public_mbpp_plus": 378
+  },
+  "source_manifests": [
+    {
+      "record_count": 378,
+      "source_archive_sha256": "af43697e8791c4c149bdfd6b489d8b5412507551ac20e28a439f650b8225db63",
+      "source_path": "mbpp_plus.source.jsonl.gz",
+      "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+      "source_sha256": "af43697e8791c4c149bdfd6b489d8b5412507551ac20e28a439f650b8225db63",
+      "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz"
+    }
+  ],
+  "source_path": "mbpp_plus.source.jsonl.gz",
+  "source_revision": "dadf43da556a00f7bacd71cb154f2932757d9144",
+  "source_url": "https://raw.githubusercontent.com/evalplus/mbppplus_release/dadf43da556a00f7bacd71cb154f2932757d9144/MbppPlus.jsonl.gz",
+  "split": "test",
+  "task_count": 378,
+  "validation_policy": "validated_python_rows",
+  "validation_scope": "python_first",
+  "validation_supported_languages": [
+    "python"
+  ]
+}

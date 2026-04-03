@@ -1,0 +1,317 @@
+[
+  {
+    "dataset_label": "HumanEval",
+    "language": "python",
+    "record_count": 164,
+    "scope": "inventory",
+    "slug": "human_eval"
+  },
+  {
+    "dataset_label": "HumanEval+",
+    "language": "python",
+    "record_count": 164,
+    "scope": "inventory",
+    "slug": "humaneval_plus"
+  },
+  {
+    "dataset_label": "MBPP+",
+    "language": "python",
+    "record_count": 378,
+    "scope": "inventory",
+    "slug": "mbpp_plus"
+  },
+  {
+    "dataset_label": "HumanEval-X",
+    "language": "cpp",
+    "record_count": 164,
+    "scope": "inventory",
+    "slug": "humaneval_x"
+  },
+  {
+    "dataset_label": "HumanEval-X",
+    "language": "go",
+    "record_count": 164,
+    "scope": "inventory",
+    "slug": "humaneval_x"
+  },
+  {
+    "dataset_label": "HumanEval-X",
+    "language": "java",
+    "record_count": 164,
+    "scope": "inventory",
+    "slug": "humaneval_x"
+  },
+  {
+    "dataset_label": "HumanEval-X",
+    "language": "javascript",
+    "record_count": 164,
+    "scope": "inventory",
+    "slug": "humaneval_x"
+  },
+  {
+    "dataset_label": "HumanEval-X",
+    "language": "python",
+    "record_count": 164,
+    "scope": "inventory",
+    "slug": "humaneval_x"
+  },
+  {
+    "dataset_label": "MBXP-5lang",
+    "language": "cpp",
+    "record_count": 848,
+    "scope": "inventory",
+    "slug": "mbxp_5lang"
+  },
+  {
+    "dataset_label": "MBXP-5lang",
+    "language": "go",
+    "record_count": 939,
+    "scope": "inventory",
+    "slug": "mbxp_5lang"
+  },
+  {
+    "dataset_label": "MBXP-5lang",
+    "language": "java",
+    "record_count": 966,
+    "scope": "inventory",
+    "slug": "mbxp_5lang"
+  },
+  {
+    "dataset_label": "MBXP-5lang",
+    "language": "javascript",
+    "record_count": 966,
+    "scope": "inventory",
+    "slug": "mbxp_5lang"
+  },
+  {
+    "dataset_label": "MBXP-5lang",
+    "language": "python",
+    "record_count": 974,
+    "scope": "inventory",
+    "slug": "mbxp_5lang"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "language": "cpp",
+    "record_count": 300,
+    "scope": "inventory",
+    "slug": "crafted_original"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "language": "go",
+    "record_count": 300,
+    "scope": "inventory",
+    "slug": "crafted_original"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "language": "java",
+    "record_count": 300,
+    "scope": "inventory",
+    "slug": "crafted_original"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "language": "javascript",
+    "record_count": 300,
+    "scope": "inventory",
+    "slug": "crafted_original"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "language": "python",
+    "record_count": 300,
+    "scope": "inventory",
+    "slug": "crafted_original"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "language": "cpp",
+    "record_count": 200,
+    "scope": "inventory",
+    "slug": "crafted_translation"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "language": "go",
+    "record_count": 200,
+    "scope": "inventory",
+    "slug": "crafted_translation"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "language": "java",
+    "record_count": 200,
+    "scope": "inventory",
+    "slug": "crafted_translation"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "language": "javascript",
+    "record_count": 200,
+    "scope": "inventory",
+    "slug": "crafted_translation"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "language": "python",
+    "record_count": 200,
+    "scope": "inventory",
+    "slug": "crafted_translation"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "language": "cpp",
+    "record_count": 150,
+    "scope": "inventory",
+    "slug": "crafted_stress"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "language": "go",
+    "record_count": 150,
+    "scope": "inventory",
+    "slug": "crafted_stress"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "language": "java",
+    "record_count": 150,
+    "scope": "inventory",
+    "slug": "crafted_stress"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "language": "javascript",
+    "record_count": 150,
+    "scope": "inventory",
+    "slug": "crafted_stress"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "language": "python",
+    "record_count": 150,
+    "scope": "inventory",
+    "slug": "crafted_stress"
+  },
+  {
+    "dataset_label": "HumanEval+",
+    "language": "python",
+    "record_count": 164,
+    "scope": "compact",
+    "slug": "humaneval_plus"
+  },
+  {
+    "dataset_label": "MBPP+",
+    "language": "python",
+    "record_count": 240,
+    "scope": "compact",
+    "slug": "mbpp_plus"
+  },
+  {
+    "dataset_label": "HumanEval-X (py/cpp/java slice)",
+    "language": "cpp",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "humaneval_x"
+  },
+  {
+    "dataset_label": "HumanEval-X (py/cpp/java slice)",
+    "language": "java",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "humaneval_x"
+  },
+  {
+    "dataset_label": "HumanEval-X (py/cpp/java slice)",
+    "language": "python",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "humaneval_x"
+  },
+  {
+    "dataset_label": "MBXP-5lang (py/cpp/java slice)",
+    "language": "cpp",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "mbxp_5lang"
+  },
+  {
+    "dataset_label": "MBXP-5lang (py/cpp/java slice)",
+    "language": "java",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "mbxp_5lang"
+  },
+  {
+    "dataset_label": "MBXP-5lang (py/cpp/java slice)",
+    "language": "python",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "mbxp_5lang"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "language": "cpp",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_original"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "language": "java",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_original"
+  },
+  {
+    "dataset_label": "Crafted Original",
+    "language": "python",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_original"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "language": "cpp",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_translation"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "language": "java",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_translation"
+  },
+  {
+    "dataset_label": "Crafted Translation",
+    "language": "python",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_translation"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "language": "cpp",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_stress"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "language": "java",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_stress"
+  },
+  {
+    "dataset_label": "Crafted Stress",
+    "language": "python",
+    "record_count": 40,
+    "scope": "compact",
+    "slug": "crafted_stress"
+  }
+]
