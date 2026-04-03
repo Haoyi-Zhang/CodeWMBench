@@ -126,62 +126,24 @@ Level 1 is the default reviewer path. If the archival raw-results artifact has n
 
 ## Linux GPU Rerun Quick Start
 
-Install lightweight dependencies:
+Full reruns belong in [`docs/remote_linux_gpu.md`](docs/remote_linux_gpu.md). The minimal public path is:
 
 ```bash
 pip install -r requirements.txt
-```
-
-Build and audit the active compact suite inputs:
-
-```bash
 bash scripts/fetch_runtime_upstreams.sh all
 python scripts/build_suite_manifests.py
 python scripts/audit_benchmarks.py --profile suite
-python scripts/audit_full_matrix.py --manifest configs/matrices/suite_all_models_methods.json --profile suite_all_models_methods --skip-hf-access
-```
-
-For a clean rerun, clear transient outputs first:
-
-```bash
-python scripts/clean_suite_outputs.py --include-full-matrix --include-release-bundle
-```
-
-Run the two-stage compact precheck:
-
-```bash
 make suite-precheck
-```
-
-Run the compact full matrix:
-
-```bash
 make suite-matrix
 ```
 
-Watch live progress:
+The active compact manifests should report:
 
-```bash
-make suite-monitor
-```
+- `suite_all_models_methods = 112`
+- `suite_canary_heavy = 28`
+- `model_invocation_smoke = 24`
 
-Regenerate final full-run summary figures from finished raw results:
-
-```bash
-python scripts/render_paper_figures.py --matrix-index results/matrix/suite_all_models_methods/matrix_index.json --suite all --paper-track generation_time --require-times-new-roman --output-dir results/figures/suite_all_models_methods
-```
-
-Export full-run summary tables from finished reports:
-
-```bash
-python scripts/export_full_run_tables.py --matrix-index results/matrix/suite_all_models_methods/matrix_index.json --output-dir results/tables/suite_all_models_methods
-```
-
-Export repository-tracked dataset statistics:
-
-```bash
-python scripts/export_dataset_statistics.py
-```
+Use [`docs/remote_linux_gpu.md`](docs/remote_linux_gpu.md) for the full clean-output, monitoring, figure/table export, and release workflow. Reviewers who only need the shipped summary assets should stop at Level 1 in [`docs/reproduce.md`](docs/reproduce.md); they do not need to rerun models.
 
 ## Reproduction Levels
 
